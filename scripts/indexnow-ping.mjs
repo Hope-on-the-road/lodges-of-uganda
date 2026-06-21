@@ -22,6 +22,7 @@ const urls = [
   `${SITE_URL}/blog/food-uganda-safari-lodges`,
   `${SITE_URL}/blog/best-time-book-uganda-lodge`,
   `${SITE_URL}/blog/where-to-stay-uganda`,
+  `${SITE_URL}/blog/hotel-occupancy-uganda`,
 ];
 
 const body = {

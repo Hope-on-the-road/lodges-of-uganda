@@ -25,6 +25,7 @@ const BLOG_ARTICLES: Article[] = [
   { slug: "food-uganda-safari-lodges", title: "Food at Uganda Safari Lodges: What to Expect" },
   { slug: "best-time-book-uganda-lodge", title: "Best Time to Book a Uganda Safari Lodge (2026)" },
   { slug: "where-to-stay-uganda", title: "Where to Stay in Uganda — Region Guide (2026)" },
+  { slug: "hotel-occupancy-uganda", title: "Uganda Hotel Occupancy Rates (2023 Data)" },
 ];
 
 const RELATED_MAP: Record<string, string[]> = {
@@ -47,6 +48,7 @@ const RELATED_MAP: Record<string, string[]> = {
   "food-uganda-safari-lodges": ["vegetarian-travel-uganda", "bwindi-sectors-compared", "uganda-safari-cost-guide"],
   "best-time-book-uganda-lodge": ["rainy-season-uganda-safari-guide", "uganda-safari-cost-guide", "bwindi-sectors-compared"],
   "where-to-stay-uganda": ["best-time-book-uganda-lodge", "best-lodges-near-entebbe-airport", "uganda-safari-cost-guide"],
+  "hotel-occupancy-uganda": ["best-time-book-uganda-lodge", "rainy-season-uganda-safari-guide", "where-to-stay-uganda"],
 };
 
 export function RelatedArticles({ currentSlug }: { currentSlug: string }) {

@@ -19,6 +19,13 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: "hotel-occupancy-uganda",
+    title: "Uganda Hotel Occupancy Rates (2023 Data)",
+    excerpt:
+      "Uganda's average hotel occupancy was 53.9% in 2023/24 — but rates vary hugely by region and season. What the data means for your lodge booking.",
+    date: "2026-06-21",
+  },
+  {
     slug: "where-to-stay-uganda",
     title: "Where to Stay in Uganda — Region Guide (2026)",
     excerpt:

@@ -12,6 +12,7 @@ export const dynamic = "force-static";
 const SITE_LAUNCH = new Date("2026-06-04");
 
 const BLOG_DATES: Record<string, string> = {
+  "hotel-occupancy-uganda": "2026-06-21",
   "where-to-stay-uganda": "2026-06-21",
   "best-time-book-uganda-lodge": "2026-06-19",
   "food-uganda-safari-lodges": "2026-06-17",
