@@ -1,10 +1,26 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { getLodges } from "@/lib/lodges-data";
 import { regions } from "@/lib/regions-data";
 import { comparisonPages } from "@/lib/comparison-pages";
-import { WHATSAPP_URL } from "@/lib/constants";
+import { SITE_URL, WHATSAPP_URL } from "@/lib/constants";
 import { FeaturedLodgesCarousel } from "@/components/FeaturedLodgesCarousel";
+
+export const metadata: Metadata = {
+  title: "Lodges of Uganda – Independent Safari Lodge Guide",
+  description:
+    "215 lodges in Uganda vergleichen – von Gorilla-Lodges in Bwindi bis Kampala. Unabhängiger Guide, keine Buchungsgebühren, keine gesponserten Einträge.",
+  alternates: { canonical: SITE_URL },
+  openGraph: {
+    title: "Lodges of Uganda – Independent Safari Lodge Guide",
+    description:
+      "Compare 200+ lodges across Uganda — gorilla trekking in Bwindi, safaris in Queen Elizabeth, Murchison Falls, Kidepo and Kampala. No booking fees.",
+    url: SITE_URL,
+    type: "website",
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
+  },
+};
 
 export default async function HomePage() {
   const lodges = await getLodges();
@@ -166,6 +182,9 @@ export default async function HomePage() {
               Kidepo Valley offers some of East Africa&apos;s most untouched wilderness.
             </p>
             <p>
+              Uganda is experiencing a significant surge as a travel destination. In 2023, 1,274,210 international visitors arrived in the country — an increase of 56.4 per cent over the previous year. The average length of stay was 7.6 nights. Accommodation services recorded 77.9 per cent growth within domestic tourism expenditure over the same period (Uganda Tourism Satellite Account Report, March 2025).
+            </p>
+            <p>
               Accommodation ranges widely too. You can stay in simple community-run guesthouses a short walk from the gorilla trailheads, mid-range safari lodges overlooking crater lakes, or ultra-luxury tented camps with private butlers and bush dinners. The right lodge depends on where you are going, what you want to do, and what you are comfortable spending.
             </p>
             <p>
@@ -294,6 +313,176 @@ export default async function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Uganda in Zahlen */}
+      <section className="py-16 bg-cream">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="font-[family-name:var(--font-heading)] font-bold text-forest text-2xl sm:text-3xl mb-8 text-center">
+            Uganda Tourism in Numbers (2023)
+          </h2>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+            <div className="bg-white rounded-xl p-5 shadow-sm text-center">
+              <p className="font-[family-name:var(--font-heading)] font-bold text-gold text-2xl sm:text-3xl">1.27M</p>
+              <p className="text-olive-dark/60 text-xs mt-1">International arrivals (+56.4%)</p>
+            </div>
+            <div className="bg-white rounded-xl p-5 shadow-sm text-center">
+              <p className="font-[family-name:var(--font-heading)] font-bold text-gold text-2xl sm:text-3xl">7.6</p>
+              <p className="text-olive-dark/60 text-xs mt-1">Average nights per stay</p>
+            </div>
+            <div className="bg-white rounded-xl p-5 shadow-sm text-center">
+              <p className="font-[family-name:var(--font-heading)] font-bold text-gold text-2xl sm:text-3xl">53.9%</p>
+              <p className="text-olive-dark/60 text-xs mt-1">Hotel room occupancy</p>
+            </div>
+            <div className="bg-white rounded-xl p-5 shadow-sm text-center">
+              <p className="font-[family-name:var(--font-heading)] font-bold text-gold text-2xl sm:text-3xl">270K</p>
+              <p className="text-olive-dark/60 text-xs mt-1">Flight arrivals at Entebbe (+37.8%)</p>
+            </div>
+            <div className="bg-white rounded-xl p-5 shadow-sm text-center col-span-2 sm:col-span-1">
+              <p className="font-[family-name:var(--font-heading)] font-bold text-gold text-2xl sm:text-3xl">17.2%</p>
+              <p className="text-olive-dark/60 text-xs mt-1">Share of national capital formation</p>
+            </div>
+          </div>
+          <p className="text-olive-dark/40 text-xs text-center mt-4">
+            Source: Uganda Tourism Satellite Account Report, March 2025 (UBOS / Uganda Tourism Board)
+          </p>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-16 bg-sand/30">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="font-[family-name:var(--font-heading)] font-bold text-forest text-2xl sm:text-3xl mb-8 text-center">
+            Frequently Asked Questions About Uganda Travel
+          </h2>
+          <div className="space-y-4">
+            <div className="bg-white rounded-xl p-5 shadow-sm">
+              <h3 className="font-semibold text-forest mb-2">How many tourists visit Uganda each year?</h3>
+              <p className="text-olive-dark/70 text-sm leading-relaxed">
+                In 2023, 1,274,210 international visitors travelled to Uganda — a 56.4 per cent increase over 812,508 arrivals in 2022. Of these, 270,160 arrived by air, representing 37.8 per cent growth. Source: Uganda Tourism Satellite Account Report, March 2025.
+              </p>
+            </div>
+            <div className="bg-white rounded-xl p-5 shadow-sm">
+              <h3 className="font-semibold text-forest mb-2">How long do tourists typically stay in Uganda?</h3>
+              <p className="text-olive-dark/70 text-sm leading-relaxed">
+                International visitors stayed an average of 7.6 nights in 2023. Given the distances between major national parks — Bwindi, Queen Elizabeth, Murchison Falls and Kidepo — a trip of at least ten to fourteen days is recommended to combine multiple regions.
+              </p>
+            </div>
+            <div className="bg-white rounded-xl p-5 shadow-sm">
+              <h3 className="font-semibold text-forest mb-2">What are the main reasons to visit Uganda?</h3>
+              <p className="text-olive-dark/70 text-sm leading-relaxed">
+                Gorilla trekking in Bwindi Impenetrable National Park is the primary draw for many travellers. Other highlights include chimpanzee tracking in <Link href="/regions/kibale" className="text-gold hover:underline">Kibale National Park</Link>, wildlife safaris in <Link href="/regions/queen-elizabeth" className="text-gold hover:underline">Queen Elizabeth</Link> and <Link href="/regions/murchison-falls" className="text-gold hover:underline">Murchison Falls</Link>, and cultural experiences. Bwindi is home to roughly half of the world&apos;s remaining mountain gorillas.
+              </p>
+            </div>
+            <div className="bg-white rounded-xl p-5 shadow-sm">
+              <h3 className="font-semibold text-forest mb-2">What accommodation is available in Kampala?</h3>
+              <p className="text-olive-dark/70 text-sm leading-relaxed">
+                This guide lists accommodation in <Link href="/regions/kampala" className="text-gold hover:underline">Kampala</Link>, Uganda&apos;s capital. Kampala frequently serves as a starting point for tours to the western national parks or as a final stop before flying out of <Link href="/regions/entebbe" className="text-gold hover:underline">Entebbe</Link> International Airport. Options range from international hotels to budget guesthouses.
+              </p>
+            </div>
+            <div className="bg-white rounded-xl p-5 shadow-sm">
+              <h3 className="font-semibold text-forest mb-2">Are there eco lodges in Uganda?</h3>
+              <p className="text-olive-dark/70 text-sm leading-relaxed">
+                Uganda has several eco-tourism properties. Examples include the Timu Eco Camp in Kaabong, which practises sustainable tourism in the <Link href="/regions/karamoja" className="text-gold hover:underline">Karamoja</Link> region. This guide includes a dedicated category for eco lodges — use the <Link href="/lodge-finder" className="text-gold hover:underline">Lodge Finder</Link> to filter by style.
+              </p>
+            </div>
+            <div className="bg-white rounded-xl p-5 shadow-sm">
+              <h3 className="font-semibold text-forest mb-2">What lodges are near Kidepo Valley National Park?</h3>
+              <p className="text-olive-dark/70 text-sm leading-relaxed">
+                This guide lists accommodation in the <Link href="/regions/kidepo" className="text-gold hover:underline">Kidepo Valley National Park</Link> region. Kidepo is one of Uganda&apos;s most remote and species-rich parks, offering an untouched wilderness experience far from the main tourist routes. Access is by domestic flight or a 10–12 hour drive from Kampala.
+              </p>
+            </div>
+            <div className="bg-white rounded-xl p-5 shadow-sm">
+              <h3 className="font-semibold text-forest mb-2">Where can you track chimpanzees in Uganda?</h3>
+              <p className="text-olive-dark/70 text-sm leading-relaxed">
+                <Link href="/regions/kibale" className="text-gold hover:underline">Kibale National Park</Link> is known as the primate capital of the world and is home to 13 primate species, including habituated chimpanzees. This guide lists accommodation in the Kibale region, as well as nearby <Link href="/regions/fort-portal" className="text-gold hover:underline">Fort Portal</Link>.
+              </p>
+            </div>
+            <div className="bg-white rounded-xl p-5 shadow-sm">
+              <h3 className="font-semibold text-forest mb-2">What economic contribution does tourism make in Uganda?</h3>
+              <p className="text-olive-dark/70 text-sm leading-relaxed">
+                Tourism-related industries generated a gross value added of 7,311 billion Uganda shillings in 2023 — a 10.9 per cent increase over 2022. Tourism accounted for 2.6 per cent of Uganda&apos;s total tax revenue and 17.2 per cent of national gross capital formation. Source: Uganda Tourism Satellite Account Report, March 2025.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: "How many tourists visit Uganda each year?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "In 2023, 1,274,210 international visitors travelled to Uganda — a 56.4 per cent increase over 812,508 arrivals in 2022. Of these, 270,160 arrived by air, representing 37.8 per cent growth. Source: Uganda Tourism Satellite Account Report, March 2025.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "How long do tourists typically stay in Uganda?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "International visitors stayed an average of 7.6 nights in 2023. Given the distances between major national parks, a trip of at least ten to fourteen days is recommended to combine multiple regions.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "What are the main reasons to visit Uganda?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Gorilla trekking in Bwindi Impenetrable National Park is the primary draw. Other highlights include chimpanzee tracking in Kibale National Park, wildlife safaris in Queen Elizabeth and Murchison Falls, and cultural experiences. Bwindi is home to roughly half of the world's remaining mountain gorillas.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "What accommodation is available in Kampala?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Lodges of Uganda lists accommodation in Kampala, Uganda's capital. Options range from international hotels to budget guesthouses. Kampala frequently serves as a starting point for tours to the western national parks or as a final stop before flying out of Entebbe International Airport.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Are there eco lodges in Uganda?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Uganda has several eco-tourism properties, including the Timu Eco Camp in Kaabong, which practises sustainable tourism in the Karamoja region. Lodges of Uganda includes a dedicated category for eco lodges.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "What lodges are near Kidepo Valley National Park?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Lodges of Uganda lists accommodation in the Kidepo Valley National Park region. Kidepo is one of Uganda's most remote and species-rich parks, offering an untouched wilderness experience. Access is by domestic flight or a 10–12 hour drive from Kampala.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Where can you track chimpanzees in Uganda?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Kibale National Park is known as the primate capital of the world and is home to 13 primate species, including habituated chimpanzees. Lodges of Uganda lists accommodation in the Kibale region and nearby Fort Portal.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "What economic contribution does tourism make in Uganda?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Tourism-related industries generated a gross value added of 7,311 billion Uganda shillings in 2023 — a 10.9 per cent increase over 2022. Tourism accounted for 2.6 per cent of Uganda's total tax revenue and 17.2 per cent of national gross capital formation. Source: Uganda Tourism Satellite Account Report, March 2025.",
+                },
+              },
+            ],
+          }),
+        }}
+      />
 
       {/* CTA */}
       <section className="relative py-20 overflow-hidden bg-gradient-to-br from-forest via-olive-dark to-safari">
