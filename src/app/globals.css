@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-forest: #2F4A3A;
+  --color-olive-dark: #3D5C4A;
+  --color-safari: #4A5A3B;
+  --color-gold: #C49A4A;
+  --color-gold-light: #D4B06A;
+  --color-olive-soft: #8B9A6D;
+  --color-sand: #E8E0D0;
+  --color-cream: #F7F4ED;
+  --color-almost-black: #1A1E1A;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--color-cream);
+  color: var(--color-almost-black);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+}
+
+p {
+  letter-spacing: 0.01em;
+}
+
+::selection {
+  background-color: var(--color-gold);
+  color: white;
+}
+
+/* Smooth image loading */
+img {
+  transition: opacity 0.3s ease;
+}
+
+/* Better focus styles */
+:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-cream);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-sand);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-olive-soft);
+}
