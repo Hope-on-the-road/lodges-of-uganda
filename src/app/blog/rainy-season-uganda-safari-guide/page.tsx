@@ -4,14 +4,14 @@ import { SITE_URL, WHATSAPP_URL } from "@/lib/constants";
 import { RelatedArticles } from "@/components/RelatedArticles";
 
 export const metadata: Metadata = {
-  title: "Uganda Safari in the Rainy Season: Worth It? (Honest Guide)",
+  title: "Uganda Safari in the Rainy Season: Worth It?",
   description:
     "Is a Uganda safari worth it in the rainy season? Lower prices, fewer crowds, and gorilla permits are easier to get. Here is what to actually expect.",
   alternates: {
     canonical: `${SITE_URL}/blog/rainy-season-uganda-safari-guide`,
   },
   openGraph: {
-    title: "Uganda Safari in the Rainy Season: Worth It? (Honest Guide)",
+    title: "Uganda Safari in the Rainy Season: Worth It?",
     description:
       "Lower lodge prices, easier gorilla permits, fewer crowds — but muddier trails. An honest breakdown of rainy-season safari travel in Uganda.",
     url: `${SITE_URL}/blog/rainy-season-uganda-safari-guide`,
@@ -24,7 +24,7 @@ export default function RainySeasonUgandaSafariGuidePage() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    headline: "Uganda Safari in the Rainy Season: Worth It? (Honest Guide)",
+    headline: "Uganda Safari in the Rainy Season: Worth It?",
     datePublished: "2026-06-13",
     description:
       "Is a Uganda safari worth it in the rainy season? Lower prices, fewer crowds, and gorilla permits are easier to get.",

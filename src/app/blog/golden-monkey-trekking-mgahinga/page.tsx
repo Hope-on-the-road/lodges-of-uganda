@@ -4,14 +4,14 @@ import { SITE_URL, WHATSAPP_URL } from "@/lib/constants";
 import { RelatedArticles } from "@/components/RelatedArticles";
 
 export const metadata: Metadata = {
-  title: "Golden Monkey Trekking in Mgahinga: Everything You Need to Know",
+  title: "Golden Monkey Trekking Mgahinga: Complete Guide",
   description:
-    "Complete guide to golden monkey trekking in Mgahinga Gorilla National Park. Permits, trek details, best time, how to combine with gorilla trekking in Uganda.",
+    "Golden monkey trekking in Mgahinga Gorilla National Park — permits, trek details, best time, and how to combine with gorilla trekking.",
   alternates: {
     canonical: `${SITE_URL}/blog/golden-monkey-trekking-mgahinga`,
   },
   openGraph: {
-    title: "Golden Monkey Trekking in Mgahinga: Everything You Need to Know",
+    title: "Golden Monkey Trekking Mgahinga: Complete Guide",
     description:
       "Golden monkey trekking in Mgahinga — permits at $100, bamboo forest treks, and how to combine with gorilla trekking in southwestern Uganda.",
     url: `${SITE_URL}/blog/golden-monkey-trekking-mgahinga`,

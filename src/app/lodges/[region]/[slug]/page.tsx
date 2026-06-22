@@ -52,7 +52,8 @@ export async function generateMetadata({
   if (!lodge || lodge.region !== region) return {};
 
   const canonicalUrl = `${SITE_URL}/lodges/${region}/${slug}`;
-  const title = lodge.seoTitle || `${lodge.name} | Uganda Lodge Guide`;
+  const rawTitle = lodge.seoTitle || `${lodge.name} | Uganda Lodge Guide`;
+  const title = rawTitle.length > 60 ? rawTitle.slice(0, 57) + "..." : rawTitle;
   // Fix 8: Ensure meta description is 150-160 chars
   const baseDesc = lodge.seoDescription || lodge.shortDescription;
   const regionName = regionsMap[region]?.name || region;

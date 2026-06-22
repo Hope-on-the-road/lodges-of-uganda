@@ -23,8 +23,10 @@ export async function generateMetadata({
   if (!operator) return {};
 
   const canonicalUrl = `${SITE_URL}/tour-operators/${slug}`;
-  const title = operator.seoTitle || `${operator.name} | Uganda Tour Operator`;
-  const description = operator.seoDescription || operator.description;
+  const rawTitle = operator.seoTitle || `${operator.name} | Uganda Tour Operator`;
+  const title = rawTitle.length > 60 ? rawTitle.slice(0, 57) + "..." : rawTitle;
+  const rawDesc = operator.seoDescription || operator.description;
+  const description = rawDesc.length > 155 ? rawDesc.slice(0, 152) + "..." : rawDesc;
 
   return {
     title,

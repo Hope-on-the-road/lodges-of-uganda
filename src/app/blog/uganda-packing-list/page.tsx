@@ -4,14 +4,14 @@ import { SITE_URL, WHATSAPP_URL } from "@/lib/constants";
 import { RelatedArticles } from "@/components/RelatedArticles";
 
 export const metadata: Metadata = {
-  title: "The Essential Uganda Packing List for Safari & Gorilla Trekking",
+  title: "Uganda Packing List for Safari & Gorilla Trekking",
   description:
     "What to pack for a Uganda safari and gorilla trekking — clothes, gear, health items, camera equipment, and common mistakes to avoid.",
   alternates: {
     canonical: `${SITE_URL}/blog/uganda-packing-list`,
   },
   openGraph: {
-    title: "The Essential Uganda Packing List for Safari & Gorilla Trekking",
+    title: "Uganda Packing List for Safari & Gorilla Trekking",
     description:
       "A practical packing list for Uganda — gorilla trekking essentials, safari clothes, and what NOT to bring.",
     url: `${SITE_URL}/blog/uganda-packing-list`,

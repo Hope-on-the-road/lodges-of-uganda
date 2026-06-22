@@ -18,8 +18,9 @@ export async function generateMetadata({
   const pair = (await getComparePairsMap()).get(slugs);
   if (!pair) return {};
 
-  const title = `${pair.lodgeA.name} vs ${pair.lodgeB.name} — Lodge Comparison Uganda`;
-  const description = `Compare ${pair.lodgeA.name} (${pair.lodgeA.priceLevel} ${pair.lodgeA.category}) and ${pair.lodgeB.name} (${pair.lodgeB.priceLevel} ${pair.lodgeB.category}) in ${pair.lodgeA.subregion}. Side-by-side: price, rooms, amenities, activities.`;
+  const fullTitle = `${pair.lodgeA.name} vs ${pair.lodgeB.name} — Lodge Comparison`;
+  const title = fullTitle.length > 60 ? `${pair.lodgeA.name} vs ${pair.lodgeB.name}` : fullTitle;
+  const description = `Compare ${pair.lodgeA.name} and ${pair.lodgeB.name} in ${pair.lodgeA.subregion}. Side-by-side: price, rooms, amenities, activities.`.slice(0, 155);
 
   return {
     title,
