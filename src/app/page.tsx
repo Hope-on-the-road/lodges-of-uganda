@@ -10,7 +10,7 @@ import { FeaturedLodgesCarousel } from "@/components/FeaturedLodgesCarousel";
 export const metadata: Metadata = {
   title: "Lodges of Uganda – Independent Safari Lodge Guide",
   description:
-    "215 lodges in Uganda vergleichen – von Gorilla-Lodges in Bwindi bis Kampala. Unabhängiger Guide, keine Buchungsgebühren, keine gesponserten Einträge.",
+    "Compare 215 lodges in Uganda — from gorilla lodges in Bwindi to Kampala. Independent guide, no booking fees, no sponsored listings.",
   alternates: { canonical: SITE_URL },
   openGraph: {
     title: "Lodges of Uganda – Independent Safari Lodge Guide",
@@ -231,6 +231,20 @@ export default async function HomePage() {
                 </div>
               </Link>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Karamoja Spotlight */}
+      <section className="bg-sand/30 py-12">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-white rounded-xl p-6 sm:p-8 shadow-sm border border-sand/40">
+            <h3 className="font-[family-name:var(--font-heading)] font-bold text-forest text-xl mb-3">
+              Emerging Destination: <Link href="/regions/karamoja" className="text-gold hover:underline">Karamoja</Link>
+            </h3>
+            <p className="text-olive-dark/70 text-sm leading-relaxed">
+              Karamoja, Uganda&apos;s northeast, is developing into one of the country&apos;s most exciting emerging tourism regions. Properties such as the Timu Eco Camp in Kaabong focus on sustainable ecotourism, while the Kidepo-Lorukul Cultural Village in Karenga offers visitors direct access to the Karamojong way of life. Access is primarily by road; an international airport serving <Link href="/regions/kidepo" className="text-gold hover:underline">Kidepo Valley National Park</Link> is in the planning stages.
+            </p>
           </div>
         </div>
       </section>
