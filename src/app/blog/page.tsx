@@ -19,6 +19,13 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: "eco-tourism-uganda",
+    title: "Eco Tourism in Uganda: How to Travel Responsibly",
+    excerpt:
+      "How eco tourism works in Uganda — revenue sharing, community lodges, conservation fees, and practical tips for choosing responsible safari accommodation.",
+    date: "2026-06-23",
+  },
+  {
     slug: "hotel-occupancy-uganda",
     title: "Uganda Hotel Occupancy Rates (2023 Data)",
     excerpt:

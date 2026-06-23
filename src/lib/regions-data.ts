@@ -528,13 +528,14 @@ export const regions: Region[] = [
     description:
       "Uganda's vibrant capital city. A sprawling metropolis built on seven hills, with a growing food scene, cultural landmarks, and busy nightlife.",
     longDescription:
-      "Kampala is Uganda's capital and largest city, home to an estimated 3 million people in the greater metropolitan area. Built on and around seven hills, the city is a dynamic mix of modern high-rises, colonial-era buildings, bustling markets, and green spaces.\n\nWhile most safari travellers pass through quickly, Kampala has its own rewards — the Kasubi Tombs (UNESCO), the Uganda Museum, the vibrant Owino Market, excellent restaurants, and a lively nightlife. For those with a day or two to spare, the city offers a genuine taste of contemporary East African urban life.",
+      "Kampala is Uganda's capital and largest city, home to an estimated 3 million people in the greater metropolitan area. Built on and around seven hills, the city is a dynamic mix of modern high-rises, colonial-era buildings, bustling markets, and green spaces.\n\nDriving through Kampala after arriving at Entebbe Airport is an experience in itself. During our January 2026 visit, we drove straight through the city centre — the roads were packed with cars, boda-bodas (motorcycle taxis) and bicycles weaving through traffic in what feels like organised chaos. Roadside stalls and small shops line every main road, and the energy is constant. It is loud, busy, and unmistakably alive.\n\nNeighbourhoods like Kamwokya — home to the Uganda Wildlife Education Centre — and the leafy hills of Kololo and Nakasero offer a quieter side of the city. The Kasubi Tombs (a UNESCO World Heritage Site), the Uganda Museum, and the vibrant Owino Market are all worth visiting. Kampala also has an excellent and growing food scene, with restaurants serving everything from local rolex (a chapati-and-egg street snack) to contemporary East African cuisine.\n\nMost safari travellers spend one or two nights in Kampala at the start or end of their trip. The city is a practical base for organising permits, meeting tour operators, and stocking up on supplies before heading west to the national parks.",
     highlights: [
       "Kasubi Tombs (UNESCO)",
       "Uganda Museum",
-      "Vibrant markets",
+      "Vibrant markets and street food",
       "Food and nightlife scene",
       "Seven hills cityscape",
+      "Kamwokya and Uganda Wildlife Education Centre",
     ],
     activities: [
       "City tours",
@@ -542,13 +543,27 @@ export const regions: Region[] = [
       "Cultural sites",
       "Food tours",
       "Shopping",
+      "Nightlife",
     ],
-    bestTimeToVisit: "Year-round.",
-    gettingThere: "About 40 minutes from Entebbe International Airport.",
-    faq: [],
-    seoTitle: "Kampala | Lodge Guide Uganda",
+    bestTimeToVisit: "Year-round. Kampala has a tropical climate with temperatures around 25-28°C. The drier months (June-September and December-February) are slightly more comfortable for walking tours.",
+    gettingThere: "About 40 minutes from Entebbe International Airport by car. Boda-bodas (motorcycle taxis) and ride-hailing apps like SafeBoda operate throughout the city. For onward travel, domestic flights depart from Entebbe to Bwindi (Kisoro/Kihihi), Murchison Falls, and Kidepo.",
+    faq: [
+      {
+        question: "How many lodges are there in Kampala?",
+        answer: "This guide lists hotels and lodges in Kampala ranging from international chain hotels to boutique guesthouses. Options include the Sheraton Kampala, Speke Resort Munyonyo on the shores of Lake Victoria, and smaller properties in the Kololo and Nakasero neighbourhoods.",
+      },
+      {
+        question: "Is Kampala worth visiting on a Uganda safari?",
+        answer: "Kampala is worth a day or two at the start or end of a safari. The Kasubi Tombs (UNESCO), Uganda Museum, and Owino Market offer genuine cultural experiences. The city also has Uganda's best restaurant scene and is a practical place to organise permits and supplies.",
+      },
+      {
+        question: "How do you get from Kampala to Bwindi?",
+        answer: "The drive from Kampala to Bwindi takes 8-10 hours via Mbarara and Kabale. Alternatively, fly from Entebbe to Kisoro or Kihihi airstrip (about 1.5 hours) with Aerolink Uganda. Most travellers break the drive with a night at Lake Bunyonyi.",
+      },
+    ],
+    seoTitle: "Lodges in Kampala — Hotels & Accommodation Guide",
     seoDescription:
-      "Hotels and accommodation in Kampala, Uganda's capital. City tours, cultural landmarks and a convenient base for onward travel.",
+      "Find lodges and hotels in Kampala, Uganda's capital. From city hotels to guesthouses — independent guide with no booking fees.",
     heroImage: "",
   },
   {
