@@ -8,12 +8,12 @@ import { SITE_URL, WHATSAPP_URL } from "@/lib/constants";
 import { FeaturedLodgesCarousel } from "@/components/FeaturedLodgesCarousel";
 
 export const metadata: Metadata = {
-  title: "Lodges of Uganda – Independent Safari Lodge Guide",
+  title: "Uganda Lodges — Compare 215+ Safari Lodges",
   description:
-    "Compare 215 lodges in Uganda — from gorilla lodges in Bwindi to Kampala. Independent guide, no booking fees, no sponsored listings.",
+    "Compare 215+ Uganda lodges — gorilla lodges in Bwindi, safari camps in Queen Elizabeth & Murchison Falls, eco lodges in Kidepo. Independent, no fees.",
   alternates: { canonical: SITE_URL },
   openGraph: {
-    title: "Lodges of Uganda – Independent Safari Lodge Guide",
+    title: "Uganda Lodges — Compare 215+ Safari Lodges | Lodges of Uganda",
     description:
       "Compare 200+ lodges across Uganda — gorilla trekking in Bwindi, safaris in Queen Elizabeth, Murchison Falls, Kidepo and Kampala. No booking fees.",
     url: SITE_URL,
@@ -56,8 +56,8 @@ export default async function HomePage() {
               </p>
 
               <h1 className="font-[family-name:var(--font-heading)] font-bold text-cream text-4xl sm:text-5xl lg:text-[3.4rem] leading-[1.1] mb-6">
-                Find Your Perfect<br />
-                <span className="text-gold">Safari Lodge in Uganda</span>
+                Uganda Lodges:<br />
+                <span className="text-gold">Find Your Perfect Safari Stay</span>
               </h1>
 
               <p className="text-cream/75 text-lg leading-relaxed mb-8 max-w-xl">
@@ -183,6 +183,15 @@ export default async function HomePage() {
             </p>
             <p>
               Uganda is experiencing a significant surge as a travel destination. In 2023, 1,274,210 international visitors arrived in the country — an increase of 56.4 per cent over the previous year. The average length of stay was 7.6 nights. Accommodation services recorded 77.9 per cent growth within domestic tourism expenditure over the same period (Uganda Tourism Satellite Account Report, March 2025).
+            </p>
+            <p>
+              The wildlife diversity is staggering. On a single game drive in Murchison Falls, you might spot Rothschild giraffes grazing in the savanna, Uganda kob (the national antelope, featured on the coat of arms) bounding across open grassland, and the grey crowned crane — Uganda&apos;s national bird — wading through wetlands. During our January 2026 visit to Murchison Falls National Park, we watched a beautiful giraffe appear from the tall grass during an afternoon game drive — one of those quiet, unhurried moments that stay with you. With over 1,070 recorded bird species — half of all bird species found in Africa — Uganda is one of the world&apos;s top birdwatching destinations.
+            </p>
+            <p>
+              Geography adds another dimension. The equator crosses Uganda, marked by monuments and viewpoints in places like Kiruhura and Kayabwe where visitors can watch the Coriolis effect demonstrated live. Lake George, a shallow crater lake straddling the equator in{" "}
+              <Link href="/regions/queen-elizabeth" className="text-gold hover:underline">Queen Elizabeth National Park</Link>, feeds the famous Kazinga Channel — one of the best boat safari routes in East Africa. Uganda lodges range from{" "}
+              <Link href="/lodges/jinja/wildwaters-lodge" className="text-gold hover:underline">Wild Waters Lodge</Link> on the Nile in Jinja to community-run properties in Buhoma such as{" "}
+              <Link href="/lodges/bwindi/gorilla-bluff-lodge" className="text-gold hover:underline">Gorilla Bluff Lodge</Link>.
             </p>
             <p>
               Accommodation ranges widely too. You can stay in simple community-run guesthouses a short walk from the gorilla trailheads, mid-range safari lodges overlooking crater lakes, or ultra-luxury tented camps with private butlers and bush dinners. The right lodge depends on where you are going, what you want to do, and what you are comfortable spending.
@@ -370,6 +379,12 @@ export default async function HomePage() {
           </h2>
           <div className="space-y-4">
             <div className="bg-white rounded-xl p-5 shadow-sm">
+              <h3 className="font-semibold text-forest mb-2">How many lodges are there in Uganda?</h3>
+              <p className="text-olive-dark/70 text-sm leading-relaxed">
+                This guide lists over 215 Uganda lodges across 16 regions — from gorilla trekking lodges in <Link href="/regions/bwindi" className="text-gold hover:underline">Bwindi</Link> and <Link href="/regions/mgahinga" className="text-gold hover:underline">Mgahinga</Link> to wildlife safari camps in <Link href="/regions/queen-elizabeth" className="text-gold hover:underline">Queen Elizabeth</Link>, <Link href="/regions/murchison-falls" className="text-gold hover:underline">Murchison Falls</Link> and <Link href="/regions/kidepo" className="text-gold hover:underline">Kidepo Valley</Link>. Uganda&apos;s accommodation ranges from ultra-luxury tented camps (from $500 per night) to community-run guesthouses (from $20 per night). In the FY 2023/24, 35 accommodation facilities were officially rated and classified by the Uganda Tourism Board (UTB Annual Report FY 2023/24).
+              </p>
+            </div>
+            <div className="bg-white rounded-xl p-5 shadow-sm">
               <h3 className="font-semibold text-forest mb-2">How many tourists visit Uganda each year?</h3>
               <p className="text-olive-dark/70 text-sm leading-relaxed">
                 In 2023, 1,274,210 international visitors travelled to Uganda — a 56.4 per cent increase over 812,508 arrivals in 2022. Of these, 270,160 arrived by air, representing 37.8 per cent growth. Source: Uganda Tourism Satellite Account Report, March 2025.
@@ -429,6 +444,14 @@ export default async function HomePage() {
             "@context": "https://schema.org",
             "@type": "FAQPage",
             mainEntity: [
+              {
+                "@type": "Question",
+                name: "How many lodges are there in Uganda?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "This guide lists over 215 Uganda lodges across 16 regions — from gorilla trekking lodges in Bwindi and Mgahinga to wildlife safari camps in Queen Elizabeth, Murchison Falls and Kidepo Valley. Uganda's accommodation ranges from ultra-luxury tented camps (from $500 per night) to community-run guesthouses (from $20 per night). In the FY 2023/24, 35 accommodation facilities were officially rated and classified by the Uganda Tourism Board.",
+                },
+              },
               {
                 "@type": "Question",
                 name: "How many tourists visit Uganda each year?",

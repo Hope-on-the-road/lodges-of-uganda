@@ -6,12 +6,12 @@ import { toLodgeListItem } from "@/lib/lodge-types";
 import { LodgeOverview } from "@/components/LodgeOverview";
 
 export const metadata: Metadata = {
-  title: "All Lodges in Uganda | Independent Lodge Guide",
+  title: "Uganda Lodges — Browse & Compare All 215+ Lodges",
   description:
-    "Browse and compare lodges across Uganda. Filter by region, category, price level and activities. Independent lodge information for gorilla trekking, safaris and more.",
+    "All Uganda lodges in one guide. Filter by region, price, category & activities — from gorilla lodges in Bwindi to safari camps in Murchison Falls. No fees.",
   alternates: { canonical: `${SITE_URL}/lodges` },
   openGraph: {
-    title: "All Lodges in Uganda | Independent Lodge Guide",
+    title: "Uganda Lodges — Browse & Compare All 215+ Lodges",
     description:
       "Browse and compare lodges across Uganda. Filter by region, category, price level and activities.",
     url: `${SITE_URL}/lodges`,
