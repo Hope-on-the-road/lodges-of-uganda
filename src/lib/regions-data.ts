@@ -90,28 +90,44 @@ export const regions: Region[] = [
     description:
       "A serene volcanic lake surrounded by the Virunga mountains near Kisoro. A peaceful base for gorilla trekking at Mgahinga or Bwindi's Nkuringo sector.",
     longDescription:
-      "Lake Mutanda is one of Uganda's most scenic lakes, cradled by the three Virunga volcanoes and rolling green hills near the town of Kisoro. The lake is dotted with small islands and offers calm waters for canoeing and kayaking.\n\nSeveral lodges have been established along its shores, making it an attractive alternative base for visitors trekking at Mgahinga or the southern sectors of Bwindi. The area is quieter and less developed than Buhoma, appealing to travelers seeking a more off-the-beaten-path experience.",
+      "Lake Mutanda is one of Uganda's most scenic lakes, cradled by the three Virunga volcanoes — Mount Muhabura, Mount Gahinga, and Mount Sabyinyo — and rolling green hills near the town of Kisoro in Kisoro District. The lake is dotted with small islands and offers calm, clear waters ideal for canoeing and kayaking. A popular activity is crossing the lake by dugout canoe paddled by a local fisherman — about a two-hour journey through some of southwestern Uganda's most stunning scenery.\n\nAccommodation on Lake Mutanda ranges from luxury to community-run eco camps. The Chameleon Hill Lodge on the northern shore offers individually designed cottages from $400 per night including breakfast — each cottage is uniquely coloured and set on a hillside with panoramic views of the Virunga volcanoes. On the southern shore, the Mutanda Eco Community Camp is managed by the Mgahinga Community Development Organisation, with revenue supporting local development projects directly. The Mutanda Lake Resort on the northwestern shore provides a family-friendly mid-range option from $170 per night.\n\nNearby Lake Mulehe, a smaller and quieter lake to the east, hosts the Bwindi Jungle Lodge — the only comfortable lodge on its shores, built from local volcanic stone and operated on ecological principles ($280 per night full board). Lake Mulehe's shoreline is excellent for birdwatching, with several species of kingfisher, heron, and African fish eagle regularly spotted.\n\nBoth lakes serve as an alternative base for gorilla trekking at Mgahinga Gorilla National Park (about 30 minutes' drive) or the Nkuringo sector of Bwindi Impenetrable National Park. The area is quieter and less developed than Buhoma, appealing to travellers seeking a more off-the-beaten-path experience.",
     highlights: [
-      "Scenic volcanic lake",
-      "Views of Virunga volcanoes",
-      "Canoeing and kayaking",
+      "Views of three Virunga volcanoes",
+      "Canoe crossing by dugout",
+      "Chameleon Hill Lodge (from $400)",
+      "Mutanda Eco Community Camp",
+      "Lake Mulehe birdwatching",
       "Close to Mgahinga and Bwindi",
-      "Peaceful and remote setting",
     ],
     activities: [
-      "Canoeing",
-      "Kayaking",
+      "Canoeing and kayaking",
       "Bird watching",
       "Community visits",
       "Gorilla trekking (nearby)",
+      "Golden monkey trekking (nearby)",
+      "Volcano hiking",
+      "Island visits",
     ],
-    bestTimeToVisit: "Year-round, with drier conditions from June to September and December to February.",
+    bestTimeToVisit: "Year-round. Drier conditions from June to September and December to February make lake activities more comfortable. The volcanoes are clearest in the early morning.",
     gettingThere:
-      "Lake Mutanda is about 15 km from Kisoro town and approximately 9–10 hours from Entebbe by road. Charter flights to Kisoro airstrip are available.",
-    faq: [],
-    seoTitle: "Lake Mutanda | Lodge Guide Uganda",
+      "Lake Mutanda is about 15 km from Kisoro town (30 minutes by car). Kisoro is approximately 9–10 hours from Entebbe by road via Kabale, or 1.5 hours by charter flight to Kisoro airstrip with Aerolink Uganda. From Buhoma (main Bwindi gateway), the drive takes about 1.5 hours.",
+    faq: [
+      {
+        question: "What lodges are on Lake Mutanda?",
+        answer: "Lake Mutanda has several lodges along its shores. Chameleon Hill Lodge (from $400/night) on the northern shore offers luxury cottages with volcano views. Mutanda Lake Resort (from $170/night) on the northwestern shore is a comfortable mid-range option. Mutanda Eco Community Camp on the southern shore is a community-owned eco-tourism property. Nearby Lake Mulehe has the Bwindi Jungle Lodge (from $280/night full board).",
+      },
+      {
+        question: "Can you do gorilla trekking from Lake Mutanda?",
+        answer: "Yes. Lake Mutanda is about 30 minutes' drive from Mgahinga Gorilla National Park and roughly 1–1.5 hours from the Nkuringo sector of Bwindi Impenetrable National Park. Many visitors use a Lake Mutanda lodge as a base for gorilla trekking at either park.",
+      },
+      {
+        question: "How do you get to Lake Mutanda?",
+        answer: "Lake Mutanda is 15 km from Kisoro town. The most comfortable option is a charter flight from Entebbe to Kisoro airstrip (1.5 hours), then a 30-minute drive. By road from Kampala, the journey takes 9–10 hours via Kabale. From Buhoma in Bwindi, it is about 1.5 hours by car.",
+      },
+    ],
+    seoTitle: "Lake Mutanda Lodges — Accommodation & Activities",
     seoDescription:
-      "Discover lodges on Lake Mutanda near Kisoro. A peaceful lakeside base for gorilla trekking at Mgahinga and Bwindi.",
+      "Find lodges on Lake Mutanda near Kisoro — from luxury at Chameleon Hill to eco camps. A scenic base for gorilla trekking at Mgahinga and Bwindi.",
     heroImage: "",
   },
   {
@@ -218,13 +234,15 @@ export const regions: Region[] = [
     description:
       "Known as the primate capital of the world. Kibale protects one of the finest tropical forests in Africa, home to 13 primate species including habituated chimpanzees.",
     longDescription:
-      "Kibale National Park covers 795 square kilometres of tropical rainforest in western Uganda near Fort Portal. It has one of the highest densities and diversities of primates in Africa, with an estimated 1,500 chimpanzees and 12 other primate species including the rare L'Hoest's monkey and red colobus.\n\nChimpanzee tracking is the main draw, but the park also offers a chimpanzee habituation experience, guided nature walks, a nocturnal primate walk, and excellent bird watching with over 375 species recorded. The Bigodi Wetland Sanctuary on the park's southern boundary is a community-managed wetland with outstanding primate and bird viewing.",
+      "Kibale National Park, established in 1993, covers 766 square kilometres of tropical rainforest in western Uganda near Fort Portal. The forest canopy reaches heights of up to 55 metres, making it one of the most impressive mid-altitude rainforests in East Africa. The park has one of the highest densities and diversities of primates anywhere in Africa, with 13 primate species recorded — including an estimated 1,500 chimpanzees habituated through the Kibale Primate Habituation Project, roughly 17,000 Uganda red colobus monkeys (out of an estimated global population of 20,000), and the rare L'Hoest's monkey.\n\nChimpanzee tracking is the main draw. A Primate Walk from the Kanyanchu visitor centre costs $150 per person (including park entrance fees, 2026) and lasts 2–4 hours, including one hour spent observing a habituated chimpanzee group. A full-day chimpanzee habituation experience is also available for those wanting a longer, more immersive encounter. Beyond primates, Kibale supports over 300 bird species and more than 140 butterfly species, making it outstanding for birdwatching and nature photography.\n\nThe Bigodi Wetland Sanctuary on the park's southern boundary is a community-managed wetland with excellent primate and bird viewing — it is one of Uganda's most successful community conservation projects. The Ndali-Kasenda Crater Lake Field, about 30 kilometres southeast of Fort Portal on the road to Kibale, offers scenic hiking through a landscape of over 50 volcanic crater lakes with views of the Rwenzori range.\n\nAccommodation near Kibale ranges from forest-edge lodges within walking distance of the Kanyanchu trailhead to comfortable properties set among the crater lakes of Fort Portal.",
     highlights: [
-      "Chimpanzee tracking",
+      "Chimpanzee tracking ($150)",
       "13 primate species",
+      "1,500 chimpanzees",
       "Bigodi Wetland Sanctuary",
-      "Over 375 bird species",
-      "Tropical rainforest walks",
+      "Over 300 bird species",
+      "140+ butterfly species",
+      "Ndali-Kasenda Crater Lakes",
     ],
     activities: [
       "Chimpanzee tracking",
@@ -233,15 +251,29 @@ export const regions: Region[] = [
       "Nature walks",
       "Nocturnal primate walk",
       "Bigodi Wetland walk",
+      "Crater lake hiking",
     ],
     bestTimeToVisit:
       "Year-round. Dry seasons (June–September, December–February) are slightly easier for forest walks, but chimps can be tracked in any season.",
     gettingThere:
-      "Kibale is about 5–6 hours from Entebbe by road via Fort Portal. Charter flights to Kasese are available.",
-    faq: [],
-    seoTitle: "Kibale National Park | Lodge Guide Uganda",
+      "Kibale is about 5–6 hours from Entebbe by road via Fort Portal. The Kanyanchu visitor centre is approximately 30 km south of Fort Portal. Charter flights to Kasese airstrip are available, from where it is about 1.5 hours by road.",
+    faq: [
+      {
+        question: "How much does chimpanzee tracking cost in Kibale?",
+        answer: "A Primate Walk (chimpanzee tracking) from the Kanyanchu visitor centre in Kibale costs $150 per person including park entrance fees (2026). The trek lasts 2–4 hours, with one hour of observation time with a habituated chimpanzee group. A full-day chimpanzee habituation experience is also available at a higher cost.",
+      },
+      {
+        question: "How many chimpanzees are in Kibale?",
+        answer: "Kibale National Park is home to an estimated 1,500 chimpanzees, habituated through the Kibale Primate Habituation Project. The park has 13 primate species in total, including roughly 17,000 Uganda red colobus monkeys — the largest concentration of this species anywhere.",
+      },
+      {
+        question: "What lodges are near Kibale National Park?",
+        answer: "Lodges near Kibale range from properties at the forest edge (within walking distance of the Kanyanchu chimpanzee tracking trailhead) to crater lake lodges in the Fort Portal area about 30 km north. Options cover all budgets, from backpacker camps to comfortable mid-range and luxury forest lodges.",
+      },
+    ],
+    seoTitle: "Kibale National Park Lodges — Chimp Tracking Guide",
     seoDescription:
-      "Discover lodges near Kibale National Park for chimpanzee tracking. Accommodation options near the primate capital of the world.",
+      "Find lodges near Kibale for chimpanzee tracking ($150). Home to 1,500 chimps and 13 primate species. Independent guide, no booking fees.",
     heroImage: "",
   },
   {
