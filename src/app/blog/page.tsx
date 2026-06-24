@@ -19,6 +19,13 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: "best-lodges-murchison-falls",
+    title: "Best Lodges in Murchison Falls National Park (2026 Guide)",
+    excerpt:
+      "Compare lodges in Murchison Falls — from luxury Paraa and Bakers to mid-range Murchison Treehouse and budget camps. Prices, locations, and honest tips from our October 2024 visit.",
+    date: "2026-06-24",
+  },
+  {
     slug: "eco-tourism-uganda",
     title: "Eco Tourism in Uganda: How to Travel Responsibly",
     excerpt:

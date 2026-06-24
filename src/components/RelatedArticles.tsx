@@ -27,6 +27,7 @@ const BLOG_ARTICLES: Article[] = [
   { slug: "where-to-stay-uganda", title: "Where to Stay in Uganda — Region Guide (2026)" },
   { slug: "hotel-occupancy-uganda", title: "Uganda Hotel Occupancy Rates (2023 Data)" },
   { slug: "eco-tourism-uganda", title: "Eco Tourism in Uganda: How to Travel Responsibly" },
+  { slug: "best-lodges-murchison-falls", title: "Best Lodges in Murchison Falls National Park (2026 Guide)" },
 ];
 
 const RELATED_MAP: Record<string, string[]> = {
@@ -51,6 +52,7 @@ const RELATED_MAP: Record<string, string[]> = {
   "where-to-stay-uganda": ["best-time-book-uganda-lodge", "best-lodges-near-entebbe-airport", "uganda-safari-cost-guide"],
   "hotel-occupancy-uganda": ["best-time-book-uganda-lodge", "rainy-season-uganda-safari-guide", "where-to-stay-uganda"],
   "eco-tourism-uganda": ["uganda-safari-cost-guide", "food-uganda-safari-lodges", "trackers-safari-lodge-visit"],
+  "best-lodges-murchison-falls": ["boat-safari-kazinga-channel-guide", "uganda-safari-cost-guide", "best-time-book-uganda-lodge"],
 };
 
 export function RelatedArticles({ currentSlug }: { currentSlug: string }) {
