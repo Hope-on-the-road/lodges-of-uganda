@@ -27,6 +27,7 @@ const urls = [
   `${SITE_URL}/blog/best-lodges-murchison-falls`,
   `${SITE_URL}/lodges-uganda`,
   `${SITE_URL}/uganda-safari-operators`,
+  `${SITE_URL}/turigye-tours`,
 ];
 
 const body = {

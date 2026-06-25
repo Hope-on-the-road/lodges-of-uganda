@@ -12,6 +12,11 @@
   to = "/uganda-safari-operators.html"
   status = 200
 
+[[redirects]]
+  from = "/turigye-tours"
+  to = "/turigye-tours.html"
+  status = 200
+
 [[headers]]
   for = "/*"
   [headers.values]
