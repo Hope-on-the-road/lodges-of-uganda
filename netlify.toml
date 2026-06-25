@@ -7,6 +7,11 @@
   to = "/lodges-uganda.html"
   status = 200
 
+[[redirects]]
+  from = "/uganda-safari-operators"
+  to = "/uganda-safari-operators.html"
+  status = 200
+
 [[headers]]
   for = "/*"
   [headers.values]
