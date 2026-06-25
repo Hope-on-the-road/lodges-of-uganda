@@ -25,6 +25,7 @@ const urls = [
   `${SITE_URL}/blog/hotel-occupancy-uganda`,
   `${SITE_URL}/blog/eco-tourism-uganda`,
   `${SITE_URL}/blog/best-lodges-murchison-falls`,
+  `${SITE_URL}/lodges-uganda`,
 ];
 
 const body = {

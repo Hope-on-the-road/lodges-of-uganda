@@ -4,16 +4,16 @@ import { SITE_URL, WHATSAPP_URL } from "@/lib/constants";
 import { RelatedArticles } from "@/components/RelatedArticles";
 
 export const metadata: Metadata = {
-  title: "Uganda Safari in the Rainy Season: Worth It?",
+  title: "Rainy Season Uganda Safari: Honest Guide (2026)",
   description:
-    "Is a Uganda safari worth it in the rainy season? Lower prices, fewer crowds, and gorilla permits are easier to get. Here is what to actually expect.",
+    "Is a rainy season safari in Uganda worth it? Lower lodge prices, easier gorilla permits, fewer crowds. First-hand experience from our October visit.",
   alternates: {
     canonical: `${SITE_URL}/blog/rainy-season-uganda-safari-guide`,
   },
   openGraph: {
-    title: "Uganda Safari in the Rainy Season: Worth It?",
+    title: "Rainy Season Uganda Safari: Honest Guide (2026)",
     description:
-      "Lower lodge prices, easier gorilla permits, fewer crowds — but muddier trails. An honest breakdown of rainy-season safari travel in Uganda.",
+      "Lower lodge prices, easier gorilla permits, fewer crowds — but muddier trails. First-hand experience from our October visit to Murchison Falls.",
     url: `${SITE_URL}/blog/rainy-season-uganda-safari-guide`,
     type: "article",
     images: [{ url: "/og-image.png", width: 1200, height: 630 }],
@@ -24,10 +24,11 @@ export default function RainySeasonUgandaSafariGuidePage() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    headline: "Uganda Safari in the Rainy Season: Worth It?",
+    headline: "Rainy Season Uganda Safari: Honest Guide (2026)",
     datePublished: "2026-06-13",
+    dateModified: "2026-06-25",
     description:
-      "Is a Uganda safari worth it in the rainy season? Lower prices, fewer crowds, and gorilla permits are easier to get.",
+      "Is a rainy season safari in Uganda worth it? Lower lodge prices, easier gorilla permits, fewer crowds. First-hand experience from our October visit.",
     url: `${SITE_URL}/blog/rainy-season-uganda-safari-guide`,
     author: {
       "@type": "Organization",
@@ -67,10 +68,10 @@ export default function RainySeasonUgandaSafariGuidePage() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="text-cream/50 text-sm mb-3">13 June 2026</p>
           <h1 className="font-[family-name:var(--font-heading)] font-bold text-cream text-3xl sm:text-4xl lg:text-5xl mb-4">
-            Uganda Safari in the Rainy Season: Worth It?
+            Rainy Season Uganda Safari: Is It Worth It?
           </h1>
           <p className="text-cream/70 text-lg">
-            Lower prices, easier permits, fewer tourists — but muddier trails and unpredictable skies. Here is the honest truth.
+            Lower prices, easier permits, fewer tourists — but muddier trails and unpredictable skies. First-hand experience from our October 2024 visit.
           </p>
         </div>
       </section>
@@ -134,6 +135,11 @@ export default function RainySeasonUgandaSafariGuidePage() {
           </p>
           <p>
             However, the rainy season brings its own rewards. The landscape is at its most lush and photogenic — emerald green hills, dramatic cloud formations, and spectacular light between showers. Birdwatching improves dramatically, as many migratory species are present and resident birds display breeding plumage. Queen Elizabeth National Park alone has over 620 recorded bird species, and the rainy months are when the most diversity is on display.
+          </p>
+          <p>
+            During our twelve-day visit to Uganda in October 2024 — right in the middle of the short rains — we drove out before dawn for a game drive in{" "}
+            <Link href="/regions/murchison-falls" className="text-gold hover:underline">Murchison Falls National Park</Link>.
+            The sunrise broke across the savanna in deep orange and red, with palm trees and acacias silhouetted against the sky. Later, on the boat safari upriver towards the falls, we spotted Nile crocodiles resting on the banks and watched a solitary elephant walk through the tall grass with its tusks gleaming white. The rain had not stopped the wildlife — if anything, the lush vegetation drew animals closer to the roads and riverbanks. The short rains proved to be an excellent window for safari travel.
           </p>
           <p>
             The Kazinga Channel boat safari in Queen Elizabeth operates year-round and is largely unaffected by rain. The same is true for the launch trip to the base of Murchison Falls — water levels are actually higher and more dramatic during the rains.
