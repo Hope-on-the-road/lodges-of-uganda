@@ -176,10 +176,10 @@ export default async function HomePage() {
               <Link href="/regions/bwindi" className="text-gold hover:underline">Bwindi Impenetrable National Park</Link>, a dense, ancient rainforest in the country&apos;s far southwest. For many travelers, that single fact is reason enough to visit.
             </p>
             <p>
-              But Uganda has far more than gorillas. The landscape shifts dramatically as you move across the country — from the open savanna plains of{" "}
+              But Uganda has far more than gorillas. The country protects ten national parks, managed by the Uganda Wildlife Authority (UWA) since 1996, along with over 30 tourism concessions across forest reserves and wildlife reserves. The landscape shifts dramatically as you move across the country — from the open savanna plains of{" "}
               <Link href="/regions/queen-elizabeth" className="text-gold hover:underline">Queen Elizabeth National Park</Link>, where tree-climbing lions and hippos share the shoreline, to the thundering cascade of{" "}
-              <Link href="/regions/murchison-falls" className="text-gold hover:underline">Murchison Falls</Link>, where the entire Nile forces itself through a seven-meter gap in the rock. In the remote northeast,{" "}
-              Kidepo Valley offers some of East Africa&apos;s most untouched wilderness.
+              <Link href="/regions/murchison-falls" className="text-gold hover:underline">Murchison Falls</Link>, where the entire Nile forces itself through a seven-meter gap in the rock. The <Link href="/regions/rwenzori" className="text-gold hover:underline">Rwenzori Mountains</Link>, a UNESCO World Heritage Site, rise to 5,109 metres on the western border, while in the remote northeast,{" "}
+              <Link href="/regions/kidepo" className="text-gold hover:underline">Kidepo Valley</Link> — home to 77 mammal species and 475 recorded bird species — offers some of East Africa&apos;s most untouched wilderness.
             </p>
             <p>
               Uganda is experiencing a significant surge as a travel destination. In 2023, 1,274,210 international visitors arrived in the country — an increase of 56.4 per cent over the previous year. The average length of stay was 7.6 nights. Accommodation services recorded 77.9 per cent growth within domestic tourism expenditure over the same period (Uganda Tourism Satellite Account Report, March 2025).
@@ -417,13 +417,19 @@ export default async function HomePage() {
             <div className="bg-white rounded-xl p-5 shadow-sm">
               <h3 className="font-semibold text-forest mb-2">What lodges are near Kidepo Valley National Park?</h3>
               <p className="text-olive-dark/70 text-sm leading-relaxed">
-                This guide lists accommodation in the <Link href="/regions/kidepo" className="text-gold hover:underline">Kidepo Valley National Park</Link> region. Kidepo is one of Uganda&apos;s most remote and species-rich parks, offering an untouched wilderness experience far from the main tourist routes. Access is by domestic flight or a 10–12 hour drive from Kampala.
+                This guide lists accommodation in the <Link href="/regions/kidepo" className="text-gold hover:underline">Kidepo Valley National Park</Link> region. Kidepo is one of Uganda&apos;s most remote and species-rich parks, with 77 mammal species and 475 recorded bird species — offering an untouched wilderness experience far from the main tourist routes. Access is by domestic flight or a 10–12 hour drive from Kampala.
               </p>
             </div>
             <div className="bg-white rounded-xl p-5 shadow-sm">
               <h3 className="font-semibold text-forest mb-2">Where can you track chimpanzees in Uganda?</h3>
               <p className="text-olive-dark/70 text-sm leading-relaxed">
                 <Link href="/regions/kibale" className="text-gold hover:underline">Kibale National Park</Link> is known as the primate capital of the world and is home to 13 primate species, including habituated chimpanzees. This guide lists accommodation in the Kibale region, as well as nearby <Link href="/regions/fort-portal" className="text-gold hover:underline">Fort Portal</Link>.
+              </p>
+            </div>
+            <div className="bg-white rounded-xl p-5 shadow-sm">
+              <h3 className="font-semibold text-forest mb-2">How many national parks does Uganda have?</h3>
+              <p className="text-olive-dark/70 text-sm leading-relaxed">
+                Uganda has ten national parks, all managed by the Uganda Wildlife Authority (UWA), which was established in 1996. The parks range from <Link href="/regions/bwindi" className="text-gold hover:underline">Bwindi Impenetrable</Link> (gorilla trekking) and <Link href="/regions/queen-elizabeth" className="text-gold hover:underline">Queen Elizabeth</Link> (tree-climbing lions, Kazinga Channel) to <Link href="/regions/rwenzori" className="text-gold hover:underline">Rwenzori Mountains</Link> — a UNESCO World Heritage Site reaching 5,109 metres — and <Link href="/regions/kidepo" className="text-gold hover:underline">Kidepo Valley</Link> in the remote northeast. UWA also oversees more than 30 tourism concessions across forest reserves and wildlife reserves throughout the country.
               </p>
             </div>
             <div className="bg-white rounded-xl p-5 shadow-sm">
@@ -506,6 +512,14 @@ export default async function HomePage() {
                 acceptedAnswer: {
                   "@type": "Answer",
                   text: "Kibale National Park is known as the primate capital of the world and is home to 13 primate species, including habituated chimpanzees. Lodges of Uganda lists accommodation in the Kibale region and nearby Fort Portal.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "How many national parks does Uganda have?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Uganda has ten national parks, all managed by the Uganda Wildlife Authority (UWA), established in 1996. They range from Bwindi Impenetrable (gorilla trekking) and Queen Elizabeth (tree-climbing lions, Kazinga Channel) to the Rwenzori Mountains — a UNESCO World Heritage Site reaching 5,109 metres — and Kidepo Valley in the remote northeast. UWA also oversees more than 30 tourism concessions across forest reserves and wildlife reserves.",
                 },
               },
               {
