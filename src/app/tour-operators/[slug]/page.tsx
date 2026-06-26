@@ -23,24 +23,24 @@ export async function generateMetadata({
   if (!operator) return {};
 
   const canonicalUrl = `${SITE_URL}/tour-operators/${slug}`;
-  const rawTitle = operator.seoTitle || `${operator.name} | Uganda Tour Operator`;
-  const title = rawTitle.length > 60 ? rawTitle.slice(0, 57) + "..." : rawTitle;
+  const rawTitle = operator.seoTitle || `${operator.name} — Uganda Tour Operator`;
+  const trimmedTitle = rawTitle.length > 60 ? rawTitle.slice(0, 57) + "..." : rawTitle;
   const rawDesc = operator.seoDescription || operator.description;
   const description = rawDesc.length > 155 ? rawDesc.slice(0, 152) + "..." : rawDesc;
 
   return {
-    title,
+    title: { absolute: trimmedTitle },
     description,
     alternates: { canonical: canonicalUrl },
     openGraph: {
-      title: `${title} | Lodges of Uganda`,
+      title: trimmedTitle,
       description,
       url: canonicalUrl,
       type: "website",
     },
     twitter: {
       card: "summary_large_image",
-      title: `${title} | Lodges of Uganda`,
+      title: trimmedTitle,
       description,
     },
   };

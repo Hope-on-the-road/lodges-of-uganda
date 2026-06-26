@@ -52,20 +52,19 @@ export async function generateMetadata({
   if (!lodge || lodge.region !== region) return {};
 
   const canonicalUrl = `${SITE_URL}/lodges/${region}/${slug}`;
-  const rawTitle = lodge.seoTitle || `${lodge.name} | Uganda Lodge Guide`;
-  const title = rawTitle.length > 60 ? rawTitle.slice(0, 57) + "..." : rawTitle;
-  // Fix 8: Ensure meta description is 150-160 chars
+  const rawTitle = lodge.seoTitle || `${lodge.name} — Uganda Lodge Guide`;
+  const trimmedTitle = rawTitle.length > 60 ? rawTitle.slice(0, 57) + "..." : rawTitle;
   const baseDesc = lodge.seoDescription || lodge.shortDescription;
   const regionName = regionsMap[region]?.name || region;
-  const description = baseDesc.length >= 140 ? baseDesc
-    : `${baseDesc} ${lodge.category} in ${lodge.subregion}, ${regionName}. ${lodge.activities.slice(0, 3).join(", ")}.`.slice(0, 160);
+  const description = baseDesc.length >= 140 ? baseDesc.slice(0, 155)
+    : `${baseDesc} ${lodge.category} in ${lodge.subregion}, ${regionName}. ${lodge.activities.slice(0, 3).join(", ")}.`.slice(0, 155);
 
   return {
-    title,
+    title: { absolute: trimmedTitle },
     description,
     alternates: { canonical: canonicalUrl },
     openGraph: {
-      title: `${title} | Lodges of Uganda`,
+      title: trimmedTitle,
       description,
       url: canonicalUrl,
       type: "website",
@@ -75,7 +74,7 @@ export async function generateMetadata({
     },
     twitter: {
       card: "summary_large_image",
-      title: `${title} | Lodges of Uganda`,
+      title: trimmedTitle,
       description,
       images: lodge.heroImage ? [lodge.heroImage.startsWith("http") ? lodge.heroImage : `${SITE_URL}${lodge.heroImage}`] : undefined,
     },

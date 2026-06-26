@@ -19,15 +19,19 @@ export async function generateMetadata({
   if (!pair) return {};
 
   const fullTitle = `${pair.lodgeA.name} vs ${pair.lodgeB.name} — Lodge Comparison`;
-  const title = fullTitle.length > 60 ? `${pair.lodgeA.name} vs ${pair.lodgeB.name}` : fullTitle;
+  const trimmedTitle = fullTitle.length > 60
+    ? (`${pair.lodgeA.name} vs ${pair.lodgeB.name}`.length > 60
+      ? `${pair.lodgeA.name} vs ${pair.lodgeB.name}`.slice(0, 57) + "..."
+      : `${pair.lodgeA.name} vs ${pair.lodgeB.name}`)
+    : fullTitle;
   const description = `Compare ${pair.lodgeA.name} and ${pair.lodgeB.name} in ${pair.lodgeA.subregion}. Side-by-side: price, rooms, amenities, activities.`.slice(0, 155);
 
   return {
-    title,
+    title: { absolute: trimmedTitle },
     description,
     alternates: { canonical: `${SITE_URL}/compare/${slugs}` },
     openGraph: {
-      title: `${title} | ${SITE_NAME}`,
+      title: trimmedTitle,
       description,
       url: `${SITE_URL}/compare/${slugs}`,
       type: "article",

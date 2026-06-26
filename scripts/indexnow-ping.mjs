@@ -28,6 +28,7 @@ const urls = [
   `${SITE_URL}/lodges-uganda`,
   `${SITE_URL}/uganda-safari-operators`,
   `${SITE_URL}/turigye-tours`,
+  `${SITE_URL}/nturo-safaris-buhoma`,
 ];
 
 const body = {
