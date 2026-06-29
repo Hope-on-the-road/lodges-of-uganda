@@ -30,6 +30,7 @@ const urls = [
   `${SITE_URL}/turigye-tours`,
   `${SITE_URL}/nturo-safaris-buhoma`,
   `${SITE_URL}/deks-safaris-murchison`,
+  `${SITE_URL}/kampala-roads-uganda`,
 ];
 
 const body = {

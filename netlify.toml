@@ -27,6 +27,11 @@
   to = "/deks-safaris-murchison.html"
   status = 200
 
+[[redirects]]
+  from = "/kampala-roads-uganda"
+  to = "/kampala-roads-uganda.html"
+  status = 200
+
 [[headers]]
   for = "/*"
   [headers.values]
