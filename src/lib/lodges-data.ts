@@ -380,6 +380,60 @@ function toLodge(db: DbLodge): Lodge {
   };
 }
 
+// --- HopeContent entity photos ---
+
+const SUPABASE_URL = "https://eqlnmpmfhxdllkuetury.supabase.co";
+const ANON_KEY =
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVxbG5tcG1maHhkbGxrdWV0dXJ5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODA2OTczNzIsImV4cCI6MjA5NjI3MzM3Mn0.ehpdizTUxQui3JYC6IJTQTTXa_O4ie0xtVlCucsqfR8";
+const THUMB_BASE = `${SUPABASE_URL}/storage/v1/object/public/thumbnails/`;
+const HC_HEADERS = { apikey: ANON_KEY, Authorization: `Bearer ${ANON_KEY}` };
+
+async function fetchEntityPhotos(slugs: string[]): Promise<Record<string, string[]>> {
+  if (!slugs.length) return {};
+  try {
+    const entRes = await fetch(
+      `${SUPABASE_URL}/rest/v1/entities?slug=in.(${slugs.join(",")})&select=id,slug`,
+      { headers: HC_HEADERS },
+    );
+    if (!entRes.ok) return {};
+    const entRows: { id: string; slug: string }[] = await entRes.json();
+    if (!entRows.length) return {};
+
+    const entityIds = entRows.map((e) => e.id);
+    const slugById = Object.fromEntries(entRows.map((e) => [e.id, e.slug]));
+
+    const mediaRes = await fetch(
+      `${SUPABASE_URL}/rest/v1/media_items` +
+        `?entity_ids=ov.{${entityIds.join(",")}}` +
+        `&status=in.(approved,used)` +
+        `&file_type=eq.image` +
+        `&thumbnail_path=not.is.null` +
+        `&select=thumbnail_path,entity_ids,content` +
+        `&order=id`,
+      { headers: HC_HEADERS },
+    );
+    if (!mediaRes.ok) return {};
+    const rows: { thumbnail_path: string; entity_ids: string[]; content?: { thumbnail_v?: number } }[] =
+      await mediaRes.json();
+
+    const grouped: Record<string, string[]> = {};
+    const idSet = new Set(entityIds);
+    for (const m of rows) {
+      for (const eid of m.entity_ids || []) {
+        if (!idSet.has(eid)) continue;
+        const slug = slugById[eid];
+        if (!slug) continue;
+        if (!grouped[slug]) grouped[slug] = [];
+        const v = m.content?.thumbnail_v;
+        grouped[slug].push(`${THUMB_BASE}${m.thumbnail_path}${v ? `?v=${v}` : ""}`);
+      }
+    }
+    return grouped;
+  } catch {
+    return {};
+  }
+}
+
 // --- Cache & exports ---
 
 let cached: Lodge[] | null = null;
@@ -398,7 +452,20 @@ export async function getLodges(): Promise<Lodge[]> {
     return [];
   }
 
-  cached = (data as DbLodge[]).map(toLodge);
+  const lodges = (data as DbLodge[]).map(toLodge);
+
+  // HopeContent-Fotos per Entity-Slug laden und überschreiben
+  const slugs = lodges.map((l) => l.slug);
+  const entityPhotos = await fetchEntityPhotos(slugs);
+  for (const lodge of lodges) {
+    const photos = entityPhotos[lodge.slug];
+    if (photos && photos.length > 0) {
+      lodge.heroImage = photos[0];
+      lodge.gallery = photos;
+    }
+  }
+
+  cached = lodges;
   return cached;
 }
 
