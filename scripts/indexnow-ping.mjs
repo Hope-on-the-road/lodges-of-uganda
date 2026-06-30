@@ -32,6 +32,7 @@ const urls = [
   `${SITE_URL}/deks-safaris-murchison`,
   `${SITE_URL}/kampala-roads-uganda`,
   `${SITE_URL}/best-lodges-uganda`,
+  `${SITE_URL}/safari-lodges-uganda`,
 ];
 
 const body = {
