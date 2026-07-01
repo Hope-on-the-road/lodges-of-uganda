@@ -33,6 +33,7 @@ const urls = [
   `${SITE_URL}/kampala-roads-uganda`,
   `${SITE_URL}/best-lodges-uganda`,
   `${SITE_URL}/safari-lodges-uganda`,
+  `${SITE_URL}/lodges-bwindi-gorilla-trekking`,
 ];
 
 const body = {
