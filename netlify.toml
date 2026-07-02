@@ -57,6 +57,11 @@
   to = "/lodges-uganda-sustainability-standards.html"
   status = 200
 
+[[redirects]]
+  from = "/top-10-lodges-bwindi"
+  to = "/top-10-lodges-bwindi.html"
+  status = 200
+
 [[headers]]
   for = "/*"
   [headers.values]
