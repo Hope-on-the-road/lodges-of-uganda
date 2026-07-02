@@ -35,6 +35,7 @@ const urls = [
   `${SITE_URL}/safari-lodges-uganda`,
   `${SITE_URL}/lodges-bwindi-gorilla-trekking`,
   `${SITE_URL}/kampala-infrastructure-safari-travel`,
+  `${SITE_URL}/lodges-uganda-sustainability-standards`,
 ];
 
 const body = {

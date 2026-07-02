@@ -52,6 +52,11 @@
   to = "/kampala-infrastructure-safari-travel.html"
   status = 200
 
+[[redirects]]
+  from = "/lodges-uganda-sustainability-standards"
+  to = "/lodges-uganda-sustainability-standards.html"
+  status = 200
+
 [[headers]]
   for = "/*"
   [headers.values]
