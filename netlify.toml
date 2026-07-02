@@ -47,6 +47,11 @@
   to = "/lodges-bwindi-gorilla-trekking.html"
   status = 200
 
+[[redirects]]
+  from = "/kampala-infrastructure-safari-travel"
+  to = "/kampala-infrastructure-safari-travel.html"
+  status = 200
+
 [[headers]]
   for = "/*"
   [headers.values]
