@@ -82,6 +82,11 @@
   to = "/nturo-safaris-gorilla-trekking.html"
   status = 200
 
+[[redirects]]
+  from = "/golden-monkey-mgahinga-guide"
+  to = "/golden-monkey-mgahinga-guide.html"
+  status = 200
+
 [[headers]]
   for = "/*"
   [headers.values]
