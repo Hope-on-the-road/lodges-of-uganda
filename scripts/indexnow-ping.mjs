@@ -40,6 +40,7 @@ const urls = [
   `${SITE_URL}/nturo-safaris-kampala-guide`,
   `${SITE_URL}/lodge-uganda-guide`,
   `${SITE_URL}/uganda-lodge`,
+  `${SITE_URL}/nturo-safaris-gorilla-trekking`,
 ];
 
 const body = {
