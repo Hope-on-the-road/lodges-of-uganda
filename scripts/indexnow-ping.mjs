@@ -39,6 +39,7 @@ const urls = [
   `${SITE_URL}/top-10-lodges-bwindi`,
   `${SITE_URL}/nturo-safaris-kampala-guide`,
   `${SITE_URL}/lodge-uganda-guide`,
+  `${SITE_URL}/uganda-lodge`,
 ];
 
 const body = {
