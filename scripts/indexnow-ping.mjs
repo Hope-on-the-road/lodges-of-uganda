@@ -47,6 +47,7 @@ const urls = [
   `${SITE_URL}/birdnest-vs-gorilla-safari-lodge`,
   `${SITE_URL}/bakiga-vs-mulehe-lodge`,
   `${SITE_URL}/lodges-in-bwindi`,
+  `${SITE_URL}/buffalo-herd-ishasha`,
 ];
 
 const body = {

@@ -112,6 +112,11 @@
   to = "/lodges-in-bwindi.html"
   status = 200
 
+[[redirects]]
+  from = "/buffalo-herd-ishasha"
+  to = "/buffalo-herd-ishasha.html"
+  status = 200
+
 [[headers]]
   for = "/*"
   [headers.values]
