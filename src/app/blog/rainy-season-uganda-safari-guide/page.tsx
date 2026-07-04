@@ -4,14 +4,14 @@ import { SITE_URL, WHATSAPP_URL } from "@/lib/constants";
 import { RelatedArticles } from "@/components/RelatedArticles";
 
 export const metadata: Metadata = {
-  title: "Rainy Season Uganda Safari: Honest Guide (2026)",
+  title: "Rainy Season Uganda Safari Guide",
   description:
     "Is a rainy season safari in Uganda worth it? Lower lodge prices, easier gorilla permits, fewer crowds. First-hand experience from our October visit.",
   alternates: {
     canonical: `${SITE_URL}/blog/rainy-season-uganda-safari-guide`,
   },
   openGraph: {
-    title: "Rainy Season Uganda Safari: Honest Guide (2026)",
+    title: "Rainy Season Uganda Safari Guide",
     description:
       "Lower lodge prices, easier gorilla permits, fewer crowds — but muddier trails. First-hand experience from our October visit to Murchison Falls.",
     url: `${SITE_URL}/blog/rainy-season-uganda-safari-guide`,
