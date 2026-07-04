@@ -97,6 +97,11 @@
   to = "/kampala-lodges.html"
   status = 200
 
+[[redirects]]
+  from = "/birdnest-vs-gorilla-safari-lodge"
+  to = "/birdnest-vs-gorilla-safari-lodge.html"
+  status = 200
+
 [[headers]]
   for = "/*"
   [headers.values]

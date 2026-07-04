@@ -44,6 +44,7 @@ const urls = [
   `${SITE_URL}/golden-monkey-mgahinga-guide`,
   `${SITE_URL}/trek-safaris-uganda-review`,
   `${SITE_URL}/kampala-lodges`,
+  `${SITE_URL}/birdnest-vs-gorilla-safari-lodge`,
 ];
 
 const body = {
