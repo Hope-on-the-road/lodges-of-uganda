@@ -43,6 +43,7 @@ const urls = [
   `${SITE_URL}/nturo-safaris-gorilla-trekking`,
   `${SITE_URL}/golden-monkey-mgahinga-guide`,
   `${SITE_URL}/trek-safaris-uganda-review`,
+  `${SITE_URL}/kampala-lodges`,
 ];
 
 const body = {

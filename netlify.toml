@@ -92,6 +92,11 @@
   to = "/trek-safaris-uganda-review.html"
   status = 200
 
+[[redirects]]
+  from = "/kampala-lodges"
+  to = "/kampala-lodges.html"
+  status = 200
+
 [[headers]]
   for = "/*"
   [headers.values]
