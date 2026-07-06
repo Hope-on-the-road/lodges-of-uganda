@@ -148,7 +148,7 @@ function LodgeMap({ lodge }: { lodge: Lodge }) {
   );
 }
 
-export function LodgePage({ lodge, similarLodges = [] }: { lodge: Lodge; similarLodges?: Lodge[] }) {
+export function LodgePage({ lodge, similarLodges = [], comparePairs = [] }: { lodge: Lodge; similarLodges?: Lodge[]; comparePairs?: { slug: string; otherName: string }[] }) {
   const region = regionsMap[lodge.region];
   const canonicalUrl = `${SITE_URL}/lodges/${lodge.region}/${lodge.slug}`;
 
@@ -737,6 +737,36 @@ export function LodgePage({ lodge, similarLodges = [] }: { lodge: Lodge; similar
                   </Link>
                 );
               })}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Compare This Lodge */}
+      {comparePairs.length > 0 && (
+        <section className="bg-cream py-10 border-t border-sand/50">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="font-[family-name:var(--font-heading)] font-bold text-forest text-2xl mb-4">
+              Compare {lodge.name}
+            </h2>
+            <p className="text-olive-dark/60 text-sm mb-5">
+              See how {lodge.name} compares to other lodges in the area — side by side on price, rooms, amenities and activities.
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+              {comparePairs.map((cp) => (
+                <Link
+                  key={cp.slug}
+                  href={`/compare/${cp.slug}`}
+                  className="flex items-center gap-3 bg-white rounded-xl px-4 py-3 border border-sand/40 hover:border-gold/40 hover:shadow-sm transition-all duration-200 group"
+                >
+                  <svg className="w-4 h-4 shrink-0 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+                  </svg>
+                  <span className="text-sm text-forest group-hover:text-gold transition-colors">
+                    vs {cp.otherName}
+                  </span>
+                </Link>
+              ))}
             </div>
           </div>
         </section>

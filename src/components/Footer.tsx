@@ -65,6 +65,12 @@ export function Footer() {
               <li><Link href="/blog/uganda-safari-cost-guide" className="text-sm hover:text-cream transition-colors">Safari Cost Guide</Link></li>
               <li><Link href="/blog/bwindi-sectors-compared" className="text-sm hover:text-cream transition-colors">Bwindi Sectors Compared</Link></li>
               <li><Link href="/blog/is-uganda-safe-for-tourists" className="text-sm hover:text-cream transition-colors">Is Uganda Safe?</Link></li>
+              <li><Link href="/buhoma-sector-lodges-bwindi" className="text-sm hover:text-cream transition-colors">Buhoma Sector Lodges</Link></li>
+              <li><Link href="/rushaga-sector-lodges-bwindi" className="text-sm hover:text-cream transition-colors">Rushaga Sector Lodges</Link></li>
+              <li><Link href="/ruhija-sector-lodges-bwindi" className="text-sm hover:text-cream transition-colors">Ruhija Sector Lodges</Link></li>
+              <li><Link href="/nkuringo-sector-lodges-bwindi" className="text-sm hover:text-cream transition-colors">Nkuringo Sector Lodges</Link></li>
+              <li><Link href="/mweya-peninsula-lodges-queen-elizabeth" className="text-sm hover:text-cream transition-colors">Mweya Peninsula Lodges</Link></li>
+              <li><Link href="/kasenyi-plains-lodges-queen-elizabeth" className="text-sm hover:text-cream transition-colors">Kasenyi Plains Lodges</Link></li>
               <li><Link href="/about" className="text-sm hover:text-cream transition-colors">About</Link></li>
               <li><Link href="/legal-notice" className="text-sm hover:text-cream transition-colors">Legal Notice</Link></li>
               <li><Link href="/privacy-policy" className="text-sm hover:text-cream transition-colors">Privacy Policy</Link></li>

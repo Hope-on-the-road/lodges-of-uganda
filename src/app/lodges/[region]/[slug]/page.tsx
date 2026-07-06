@@ -5,6 +5,7 @@ import { regionsMap } from "@/lib/regions-data";
 import { LodgePage } from "@/components/LodgePage";
 import { SITE_URL } from "@/lib/constants";
 import type { Lodge, LodgeCategory } from "@/lib/lodge-types";
+import { getComparePairs } from "@/lib/compare-pairs";
 
 const CATEGORY_ADJACENCY: Record<string, LodgeCategory[]> = {
   "Ultra Luxury": ["Ultra Luxury", "Luxury"],
@@ -212,6 +213,15 @@ export default async function Page({
     },
   ];
 
+  const allPairs = await getComparePairs();
+  const comparePairs = allPairs
+    .filter((p) => p.lodgeA.slug === lodge.slug || p.lodgeB.slug === lodge.slug)
+    .slice(0, 6)
+    .map((p) => ({
+      slug: p.slug,
+      otherName: p.lodgeA.slug === lodge.slug ? p.lodgeB.name : p.lodgeA.name,
+    }));
+
   return (
     <>
       {jsonLd.map((schema, i) => (
@@ -221,7 +231,7 @@ export default async function Page({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
         />
       ))}
-      <LodgePage lodge={lodge} similarLodges={await getSimilarLodges(lodge)} />
+      <LodgePage lodge={lodge} similarLodges={await getSimilarLodges(lodge)} comparePairs={comparePairs} />
     </>
   );
 }
