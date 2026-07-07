@@ -239,6 +239,41 @@ export default function BlogIndexPage() {
           ))}
         </div>
 
+        {/* In-Depth Guides — static articles */}
+        <section className="mt-16 mb-4">
+          <h2 className="font-[family-name:var(--font-heading)] font-bold text-forest text-2xl mb-2">
+            In-Depth Guides
+          </h2>
+          <p className="text-olive-dark/60 text-sm mb-6">
+            Data-driven articles and detailed comparisons based on Uganda government statistics and first-hand research.
+          </p>
+          <div className="grid sm:grid-cols-2 gap-4">
+            {[
+              { href: "/bwindi-lodges-comparison", title: "Bwindi Lodges Compared", desc: "Prices, sectors, and gorilla groups across all four Bwindi sectors" },
+              { href: "/luxury-lodges-bwindi", title: "Luxury Lodges in Bwindi", desc: "Exclusive accommodation from Buhoma Lodge to Clouds Mountain Gorilla Lodge" },
+              { href: "/family-lodges-bwindi", title: "Family Lodges in Bwindi", desc: "Child-friendly options and what families need to know about gorilla trekking" },
+              { href: "/budget-vs-luxury-uganda", title: "Budget vs Luxury Uganda", desc: "Price comparison from $4 camping to $2,600 luxury lodges" },
+              { href: "/accommodation-types-uganda", title: "Accommodation Types Uganda", desc: "Safari lodges, tented camps, guesthouses, and community lodges explained" },
+              { href: "/lodges-hotels-by-region", title: "Lodges by Region", desc: "Western, Central, Northern, and Eastern — regional comparison with occupancy data" },
+              { href: "/uganda-accommodation-statistics", title: "Uganda Accommodation Statistics", desc: "350,550 rooms, 117 graded facilities — the official data behind the numbers" },
+              { href: "/ssese-islands-guide", title: "Ssese Islands Guide", desc: "Beaches, island hopping, and accommodation on Lake Victoria" },
+            ].map((guide) => (
+              <a
+                key={guide.href}
+                href={guide.href}
+                className="block bg-white rounded-xl p-5 shadow-sm hover:shadow-md transition-shadow group border border-sand/50"
+              >
+                <h3 className="font-[family-name:var(--font-heading)] font-semibold text-forest text-base group-hover:text-gold transition-colors mb-1">
+                  {guide.title}
+                </h3>
+                <p className="text-olive-dark/60 text-xs leading-relaxed">
+                  {guide.desc}
+                </p>
+              </a>
+            ))}
+          </div>
+        </section>
+
         {/* CTA */}
         <section className="bg-forest rounded-xl p-8 text-cream text-center mt-12">
           <h2 className="font-[family-name:var(--font-heading)] font-bold text-xl mb-3">

@@ -11,6 +11,42 @@ export const dynamic = "force-static";
 
 const SITE_LAUNCH = new Date("2026-06-04");
 
+const STATIC_PAGES: Record<string, string> = {
+  "lodges-uganda": "2026-06-04",
+  "uganda-safari-operators": "2026-06-04",
+  "turigye-tours": "2026-06-04",
+  "nturo-safaris-buhoma": "2026-06-04",
+  "deks-safaris-murchison": "2026-06-04",
+  "kampala-roads-uganda": "2026-06-13",
+  "best-lodges-uganda": "2026-06-13",
+  "safari-lodges-uganda": "2026-06-13",
+  "lodges-bwindi-gorilla-trekking": "2026-06-13",
+  "kampala-infrastructure-safari-travel": "2026-06-13",
+  "lodges-uganda-sustainability-standards": "2026-06-13",
+  "top-10-lodges-bwindi": "2026-06-13",
+  "nturo-safaris-kampala-guide": "2026-06-13",
+  "lodge-uganda-guide": "2026-06-13",
+  "uganda-lodge": "2026-06-13",
+  "nturo-safaris-gorilla-trekking": "2026-06-13",
+  "golden-monkey-mgahinga-guide": "2026-06-13",
+  "trek-safaris-uganda-review": "2026-06-13",
+  "kampala-lodges": "2026-06-13",
+  "birdnest-vs-gorilla-safari-lodge": "2026-06-13",
+  "bakiga-vs-mulehe-lodge": "2026-06-13",
+  "lodges-in-bwindi": "2026-06-13",
+  "buffalo-herd-ishasha": "2026-06-13",
+  "uganda-accommodation-statistics": "2026-06-29",
+  "lodges-hotels-by-region": "2026-07-07",
+  "accommodation-types-uganda": "2026-07-07",
+  "hotel-occupancy-quarterly-uganda": "2026-07-07",
+  "uganda-rooms-beds-occupancy": "2026-07-07",
+  "bwindi-lodges-comparison": "2026-07-07",
+  "budget-vs-luxury-uganda": "2026-07-07",
+  "family-lodges-bwindi": "2026-07-07",
+  "ssese-islands-guide": "2026-07-07",
+  "luxury-lodges-bwindi": "2026-07-07",
+};
+
 const BLOG_DATES: Record<string, string> = {
   "hotel-occupancy-uganda": "2026-06-21",
   "where-to-stay-uganda": "2026-06-21",
@@ -49,6 +85,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${SITE_URL}/itineraries/7-day-gorilla-safari`, lastModified: new Date("2026-06-06"), changeFrequency: "monthly", priority: 0.8 },
     { url: `${SITE_URL}/itineraries/10-day-primates-wildlife`, lastModified: new Date("2026-06-06"), changeFrequency: "monthly", priority: 0.8 },
     { url: `${SITE_URL}/itineraries/14-day-complete-uganda`, lastModified: new Date("2026-06-06"), changeFrequency: "monthly", priority: 0.8 },
+    ...Object.entries(STATIC_PAGES).map(([slug, date]) => ({
+      url: `${SITE_URL}/${slug}`,
+      lastModified: new Date(date),
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    })),
     { url: `${SITE_URL}/blog`, lastModified: new Date("2026-06-21"), changeFrequency: "weekly", priority: 0.7 },
     ...Object.entries(BLOG_DATES).map(([slug, date]) => ({
       url: `${SITE_URL}/blog/${slug}`,
