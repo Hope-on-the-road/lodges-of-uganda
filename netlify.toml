@@ -122,6 +122,51 @@
   to = "/uganda-accommodation-statistics.html"
   status = 200
 
+[[redirects]]
+  from = "/lodges-hotels-by-region"
+  to = "/lodges-hotels-by-region.html"
+  status = 200
+
+[[redirects]]
+  from = "/accommodation-types-uganda"
+  to = "/accommodation-types-uganda.html"
+  status = 200
+
+[[redirects]]
+  from = "/hotel-occupancy-quarterly-uganda"
+  to = "/hotel-occupancy-quarterly-uganda.html"
+  status = 200
+
+[[redirects]]
+  from = "/uganda-rooms-beds-occupancy"
+  to = "/uganda-rooms-beds-occupancy.html"
+  status = 200
+
+[[redirects]]
+  from = "/bwindi-lodges-comparison"
+  to = "/bwindi-lodges-comparison.html"
+  status = 200
+
+[[redirects]]
+  from = "/budget-vs-luxury-uganda"
+  to = "/budget-vs-luxury-uganda.html"
+  status = 200
+
+[[redirects]]
+  from = "/family-lodges-bwindi"
+  to = "/family-lodges-bwindi.html"
+  status = 200
+
+[[redirects]]
+  from = "/ssese-islands-guide"
+  to = "/ssese-islands-guide.html"
+  status = 200
+
+[[redirects]]
+  from = "/luxury-lodges-bwindi"
+  to = "/luxury-lodges-bwindi.html"
+  status = 200
+
 [[headers]]
   for = "/*"
   [headers.values]

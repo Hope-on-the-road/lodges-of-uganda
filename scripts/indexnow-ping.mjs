@@ -49,6 +49,15 @@ const urls = [
   `${SITE_URL}/lodges-in-bwindi`,
   `${SITE_URL}/buffalo-herd-ishasha`,
   `${SITE_URL}/uganda-accommodation-statistics`,
+  `${SITE_URL}/lodges-hotels-by-region`,
+  `${SITE_URL}/accommodation-types-uganda`,
+  `${SITE_URL}/hotel-occupancy-quarterly-uganda`,
+  `${SITE_URL}/uganda-rooms-beds-occupancy`,
+  `${SITE_URL}/bwindi-lodges-comparison`,
+  `${SITE_URL}/budget-vs-luxury-uganda`,
+  `${SITE_URL}/family-lodges-bwindi`,
+  `${SITE_URL}/ssese-islands-guide`,
+  `${SITE_URL}/luxury-lodges-bwindi`,
 ];
 
 const body = {
