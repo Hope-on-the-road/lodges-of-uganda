@@ -8,14 +8,14 @@ import { SITE_URL, WHATSAPP_URL } from "@/lib/constants";
 import { FeaturedLodgesCarousel } from "@/components/FeaturedLodgesCarousel";
 
 export const metadata: Metadata = {
-  title: "Uganda Lodges — Compare 215+ Safari Lodges",
+  title: "Lodge Uganda — Compare 215 Safari Lodges | Free Guide",
   description:
-    "Compare 215+ Uganda lodges — gorilla lodges in Bwindi, safari camps in Queen Elizabeth & Murchison Falls, eco lodges in Kidepo. Independent, no fees.",
+    "Find the right lodge in Uganda. 215 properties across 17 regions — gorilla lodges, safari camps, eco lodges. Independent guide, no booking fees, no paid rankings.",
   alternates: { canonical: SITE_URL },
   openGraph: {
-    title: "Uganda Lodges — Compare 215+ Safari Lodges | Lodges of Uganda",
+    title: "Lodge Uganda — Compare 215 Safari Lodges | Free Guide",
     description:
-      "Compare 200+ lodges across Uganda — gorilla trekking in Bwindi, safaris in Queen Elizabeth, Murchison Falls, Kidepo and Kampala. No booking fees.",
+      "Find the right lodge in Uganda. 215 properties across 17 regions — gorilla lodges, safari camps, eco lodges. Independent guide, no booking fees.",
     url: SITE_URL,
     type: "website",
     images: [{ url: "/og-image.png", width: 1200, height: 630 }],
@@ -56,12 +56,12 @@ export default async function HomePage() {
               </p>
 
               <h1 className="font-[family-name:var(--font-heading)] font-bold text-cream text-4xl sm:text-5xl lg:text-[3.4rem] leading-[1.1] mb-6">
-                Uganda Lodges:<br />
-                <span className="text-gold">Find Your Perfect Safari Stay</span>
+                Lodge Uganda:<br />
+                <span className="text-gold">Compare {lodges.length} Safari Lodges</span>
               </h1>
 
               <p className="text-cream/75 text-lg leading-relaxed mb-8 max-w-xl">
-                Compare {lodges.length} lodges across {regionCounts.length} regions. From gorilla trekking in Bwindi to game drives in Queen Elizabeth — honest information, no booking fees.
+                Find the right lodge in Uganda — {lodges.length} properties across {regionCounts.length} regions, from gorilla lodges in Bwindi to safari camps in Queen Elizabeth. Independent guide, no booking fees.
               </p>
 
               <div className="flex flex-col sm:flex-row items-start gap-3">
@@ -150,6 +150,15 @@ export default async function HomePage() {
         </div>
       </section>
 
+      {/* Quick-win intro — keyword-rich anchor paragraph */}
+      <section className="bg-cream py-10 sm:py-12 border-b border-sand/40">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p className="text-olive-dark/80 text-base sm:text-lg leading-relaxed text-center">
+            <strong>This is Uganda&apos;s most comprehensive lodge guide</strong> — {lodges.length} lodges across {regionCounts.length} regions, independently researched, with no booking fees and no paid placements. Finding a lodge in Uganda means choosing between luxury tented camps at the edge of Bwindi&apos;s gorilla forest, riverfront lodges on the Nile at Murchison Falls, and community eco-lodges in remote Kidepo Valley. Prices range from around USD&nbsp;50 per night at mid-range community lodges to USD&nbsp;800+ at ultra-luxury properties.
+          </p>
+        </div>
+      </section>
+
       {/* Why Uganda — SEO intro text with photo */}
       <section className="bg-cream py-16 sm:py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -197,9 +206,44 @@ export default async function HomePage() {
               Accommodation ranges widely too. You can stay in simple community-run guesthouses a short walk from the gorilla trailheads, mid-range safari lodges overlooking crater lakes, or ultra-luxury tented camps with private butlers and bush dinners. The right lodge depends on where you are going, what you want to do, and what you are comfortable spending.
             </p>
             <p>
-              That is what this site is for. LodgesOfUganda.com is an independent guide — we research every property individually, we do not accept paid placements, and we never charge booking fees. Our goal is straightforward: help independent travelers compare their options honestly, so you can spend less time searching and more time planning the trip itself.
+              LodgesOfUganda.com is an independent guide to every lodge in Uganda — {lodges.length} properties across {regionCounts.length} regions, individually researched. In 2023, Uganda received 1,274,210 international visitors, a 56.4 per cent increase over the previous year (Uganda Tourism Satellite Account, March 2025). This guide exists to help you navigate that demand honestly: no paid placements, no sponsored rankings, no booking commissions.
             </p>
           </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Types of Lodge in Uganda */}
+      <section className="bg-sand/30 py-16 sm:py-20">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="font-[family-name:var(--font-heading)] font-bold text-forest text-2xl sm:text-3xl mb-10 text-center">
+            Types of Lodge in Uganda
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div className="bg-white rounded-xl p-6 shadow-sm border border-sand/40">
+              <h3 className="font-[family-name:var(--font-heading)] font-semibold text-forest text-lg mb-3">Gorilla Lodges</h3>
+              <p className="text-olive-dark/70 text-sm leading-relaxed">
+                {gorillaCount} lodges near <Link href="/regions/bwindi" className="text-gold hover:underline">Bwindi Impenetrable National Park</Link> and <Link href="/regions/mgahinga" className="text-gold hover:underline">Mgahinga Gorilla National Park</Link>. Gorilla trekking permits cost USD&nbsp;800 per person and must be booked through the Uganda Wildlife Authority (UWA). Properties range from budget backpacker lodges to ultra-luxury camps like Clouds Mountain Gorilla Lodge at over 2,000&nbsp;metres elevation.
+              </p>
+            </div>
+            <div className="bg-white rounded-xl p-6 shadow-sm border border-sand/40">
+              <h3 className="font-[family-name:var(--font-heading)] font-semibold text-forest text-lg mb-3">Safari Lodges</h3>
+              <p className="text-olive-dark/70 text-sm leading-relaxed">
+                {safariCount} lodges with direct game drive access across <Link href="/regions/queen-elizabeth" className="text-gold hover:underline">Queen Elizabeth</Link>, <Link href="/regions/murchison-falls" className="text-gold hover:underline">Murchison Falls</Link>, and <Link href="/regions/kidepo" className="text-gold hover:underline">Kidepo Valley</Link> national parks. Mweya Safari Lodge, the oldest in Queen Elizabeth, offers views over the Rwenzori Mountains and the Kazinga Channel. Apoka Safari Lodge in Kidepo provides one of Uganda&apos;s most remote luxury experiences.
+              </p>
+            </div>
+            <div className="bg-white rounded-xl p-6 shadow-sm border border-sand/40">
+              <h3 className="font-[family-name:var(--font-heading)] font-semibold text-forest text-lg mb-3">Eco &amp; Community Lodges</h3>
+              <p className="text-olive-dark/70 text-sm leading-relaxed">
+                Uganda has a strong tradition of community-owned tourism. Buhoma Lodge, eight cottages built from local materials within Bwindi&apos;s boundaries, operates on ecological principles. Nkuringo Bwindi Gorilla Lodge, a community-owned property at 2,090&nbsp;metres, works with Uganda Carbon Bureau on carbon offset programmes. Use the <Link href="/lodge-finder" className="text-gold hover:underline">Lodge Finder</Link> to filter by eco lodges.
+              </p>
+            </div>
+            <div className="bg-white rounded-xl p-6 shadow-sm border border-sand/40">
+              <h3 className="font-[family-name:var(--font-heading)] font-semibold text-forest text-lg mb-3">Lakeside &amp; River Lodges</h3>
+              <p className="text-olive-dark/70 text-sm leading-relaxed">
+                Uganda&apos;s lakes and rivers provide atmospheric settings for lodges. Semliki Safari Lodge operates safari tents on raised wooden platforms inside the Semliki Wildlife Reserve. <Link href="/lodges/jinja/wildwaters-lodge" className="text-gold hover:underline">Wild Waters Lodge</Link> sits on a private island in the Nile near Jinja. The <Link href="/ssese-islands-guide" className="text-gold hover:underline">Ssese Islands</Link> on Lake Victoria offer beach and island-hopping accommodation.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -375,67 +419,49 @@ export default async function HomePage() {
       <section className="py-16 bg-sand/30">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="font-[family-name:var(--font-heading)] font-bold text-forest text-2xl sm:text-3xl mb-8 text-center">
-            Frequently Asked Questions About Uganda Travel
+            Frequently Asked Questions: Lodges in Uganda
           </h2>
           <div className="space-y-4">
             <div className="bg-white rounded-xl p-5 shadow-sm">
-              <h3 className="font-semibold text-forest mb-2">How many lodges are there in Uganda?</h3>
+              <h3 className="font-semibold text-forest mb-2">What is the best lodge in Uganda for gorilla trekking?</h3>
               <p className="text-olive-dark/70 text-sm leading-relaxed">
-                This guide lists over 215 Uganda lodges across 16 regions — from gorilla trekking lodges in <Link href="/regions/bwindi" className="text-gold hover:underline">Bwindi</Link> and <Link href="/regions/mgahinga" className="text-gold hover:underline">Mgahinga</Link> to wildlife safari camps in <Link href="/regions/queen-elizabeth" className="text-gold hover:underline">Queen Elizabeth</Link>, <Link href="/regions/murchison-falls" className="text-gold hover:underline">Murchison Falls</Link> and <Link href="/regions/kidepo" className="text-gold hover:underline">Kidepo Valley</Link>. Uganda&apos;s accommodation ranges from ultra-luxury tented camps (from $500 per night) to community-run guesthouses (from $20 per night). In the FY 2023/24, 35 accommodation facilities were officially rated and classified by the Uganda Tourism Board (UTB Annual Report FY 2023/24).
+                The best lodge depends on which gorilla sector you trek from. For the Buhoma sector (northern <Link href="/regions/bwindi" className="text-gold hover:underline">Bwindi</Link>), Buhoma Lodge offers eight eco-cottages directly inside the park boundary. For Nkuringo (southern Bwindi), Clouds Mountain Gorilla Lodge at over 2,000&nbsp;metres is Uganda&apos;s highest-altitude luxury property. For Rushaga and Ruhija, Ruhija Gorilla Safari Lodge provides direct access to the tracking departure points.
               </p>
             </div>
             <div className="bg-white rounded-xl p-5 shadow-sm">
-              <h3 className="font-semibold text-forest mb-2">How many tourists visit Uganda each year?</h3>
+              <h3 className="font-semibold text-forest mb-2">How much does a lodge in Uganda cost?</h3>
               <p className="text-olive-dark/70 text-sm leading-relaxed">
-                In 2023, 1,274,210 international visitors travelled to Uganda — a 56.4 per cent increase over 812,508 arrivals in 2022. Of these, 270,160 arrived by air, representing 37.8 per cent growth. Source: Uganda Tourism Satellite Account Report, March 2025.
+                Uganda lodge prices range from approximately USD&nbsp;50–80 per night for mid-range community lodges to USD&nbsp;400–800+ per night at ultra-luxury tented camps. Prices typically include full board (three meals). Budget options such as Bwindi Backpackers Lodge start below USD&nbsp;50. See our <Link href="/budget-vs-luxury-uganda" className="text-gold hover:underline">budget vs luxury comparison</Link> for detailed price breakdowns.
               </p>
             </div>
             <div className="bg-white rounded-xl p-5 shadow-sm">
-              <h3 className="font-semibold text-forest mb-2">How long do tourists typically stay in Uganda?</h3>
+              <h3 className="font-semibold text-forest mb-2">When should I book a lodge in Uganda?</h3>
               <p className="text-olive-dark/70 text-sm leading-relaxed">
-                International visitors stayed an average of 7.6 nights in 2023. Given the distances between major national parks — Bwindi, Queen Elizabeth, Murchison Falls and Kidepo — a trip of at least ten to fourteen days is recommended to combine multiple regions.
+                For gorilla trekking lodges, book 3–6 months in advance, particularly for peak season (June–August and December–February). Gorilla permits sell out earlier than lodges. For safari lodges in <Link href="/regions/queen-elizabeth" className="text-gold hover:underline">Queen Elizabeth</Link> or <Link href="/regions/murchison-falls" className="text-gold hover:underline">Murchison Falls</Link>, 2–3 months is generally sufficient outside peak season. Read our <Link href="/blog/best-time-book-uganda-lodge" className="text-gold hover:underline">booking guide</Link> for details.
               </p>
             </div>
             <div className="bg-white rounded-xl p-5 shadow-sm">
-              <h3 className="font-semibold text-forest mb-2">What are the main reasons to visit Uganda?</h3>
+              <h3 className="font-semibold text-forest mb-2">Do Uganda lodges include meals?</h3>
               <p className="text-olive-dark/70 text-sm leading-relaxed">
-                Gorilla trekking in Bwindi Impenetrable National Park is the primary draw for many travellers. Other highlights include chimpanzee tracking in <Link href="/regions/kibale" className="text-gold hover:underline">Kibale National Park</Link>, wildlife safaris in <Link href="/regions/queen-elizabeth" className="text-gold hover:underline">Queen Elizabeth</Link> and <Link href="/regions/murchison-falls" className="text-gold hover:underline">Murchison Falls</Link>, and cultural experiences. Bwindi is home to roughly half of the world&apos;s remaining mountain gorillas.
+                Most safari lodges and gorilla lodges in Uganda operate on a full-board or half-board basis. Community lodges and budget guesthouses typically offer breakfast and dinner; meals on request are common at simpler properties. See our guide to <Link href="/blog/food-uganda-safari-lodges" className="text-gold hover:underline">food at Uganda safari lodges</Link>.
               </p>
             </div>
             <div className="bg-white rounded-xl p-5 shadow-sm">
-              <h3 className="font-semibold text-forest mb-2">What accommodation is available in Kampala?</h3>
+              <h3 className="font-semibold text-forest mb-2">Which region has the most lodges in Uganda?</h3>
               <p className="text-olive-dark/70 text-sm leading-relaxed">
-                This guide lists accommodation in <Link href="/regions/kampala" className="text-gold hover:underline">Kampala</Link>, Uganda&apos;s capital. Kampala frequently serves as a starting point for tours to the western national parks or as a final stop before flying out of <Link href="/regions/entebbe" className="text-gold hover:underline">Entebbe</Link> International Airport. Options range from international hotels to budget guesthouses.
+                <Link href="/regions/bwindi" className="text-gold hover:underline">Bwindi Impenetrable National Park</Link> has the highest concentration of lodges, driven by mountain gorilla trekking demand. <Link href="/regions/queen-elizabeth" className="text-gold hover:underline">Queen Elizabeth National Park</Link> and the <Link href="/regions/fort-portal" className="text-gold hover:underline">Fort Portal/Crater Lakes</Link> region follow. Browse all regions in our <Link href="/lodges-hotels-by-region" className="text-gold hover:underline">lodges by region guide</Link>.
               </p>
             </div>
             <div className="bg-white rounded-xl p-5 shadow-sm">
-              <h3 className="font-semibold text-forest mb-2">Are there eco lodges in Uganda?</h3>
+              <h3 className="font-semibold text-forest mb-2">What is the difference between a lodge and a tented camp in Uganda?</h3>
               <p className="text-olive-dark/70 text-sm leading-relaxed">
-                Uganda has several eco-tourism properties. Examples include the Timu Eco Camp in Kaabong, which practises sustainable tourism in the <Link href="/regions/karamoja" className="text-gold hover:underline">Karamoja</Link> region. This guide includes a dedicated category for eco lodges — use the <Link href="/lodge-finder" className="text-gold hover:underline">Lodge Finder</Link> to filter by style.
+                A lodge in Uganda is typically a permanent structure with en-suite rooms, restaurant, and communal areas. A luxury tented camp offers large canvas tents on raised platforms with the same amenities — private bathroom, electricity, full-board meals — but a closer-to-nature experience. Both range from mid-range to ultra-luxury. See our <Link href="/accommodation-types-uganda" className="text-gold hover:underline">accommodation types guide</Link> for details.
               </p>
             </div>
             <div className="bg-white rounded-xl p-5 shadow-sm">
-              <h3 className="font-semibold text-forest mb-2">What lodges are near Kidepo Valley National Park?</h3>
+              <h3 className="font-semibold text-forest mb-2">How many lodges are listed on this guide?</h3>
               <p className="text-olive-dark/70 text-sm leading-relaxed">
-                This guide lists accommodation in the <Link href="/regions/kidepo" className="text-gold hover:underline">Kidepo Valley National Park</Link> region. Kidepo is one of Uganda&apos;s most remote and species-rich parks, with 77 mammal species and 475 recorded bird species — offering an untouched wilderness experience far from the main tourist routes. Access is by domestic flight or a 10–12 hour drive from Kampala.
-              </p>
-            </div>
-            <div className="bg-white rounded-xl p-5 shadow-sm">
-              <h3 className="font-semibold text-forest mb-2">Where can you track chimpanzees in Uganda?</h3>
-              <p className="text-olive-dark/70 text-sm leading-relaxed">
-                <Link href="/regions/kibale" className="text-gold hover:underline">Kibale National Park</Link> is known as the primate capital of the world and is home to 13 primate species, including habituated chimpanzees. This guide lists accommodation in the Kibale region, as well as nearby <Link href="/regions/fort-portal" className="text-gold hover:underline">Fort Portal</Link>.
-              </p>
-            </div>
-            <div className="bg-white rounded-xl p-5 shadow-sm">
-              <h3 className="font-semibold text-forest mb-2">How many national parks does Uganda have?</h3>
-              <p className="text-olive-dark/70 text-sm leading-relaxed">
-                Uganda has ten national parks, all managed by the Uganda Wildlife Authority (UWA), which was established in 1996. The parks range from <Link href="/regions/bwindi" className="text-gold hover:underline">Bwindi Impenetrable</Link> (gorilla trekking) and <Link href="/regions/queen-elizabeth" className="text-gold hover:underline">Queen Elizabeth</Link> (tree-climbing lions, Kazinga Channel) to <Link href="/regions/rwenzori" className="text-gold hover:underline">Rwenzori Mountains</Link> — a UNESCO World Heritage Site reaching 5,109 metres — and <Link href="/regions/kidepo" className="text-gold hover:underline">Kidepo Valley</Link> in the remote northeast. UWA also oversees more than 30 tourism concessions across forest reserves and wildlife reserves throughout the country.
-              </p>
-            </div>
-            <div className="bg-white rounded-xl p-5 shadow-sm">
-              <h3 className="font-semibold text-forest mb-2">What economic contribution does tourism make in Uganda?</h3>
-              <p className="text-olive-dark/70 text-sm leading-relaxed">
-                Tourism-related industries generated a gross value added of 7,311 billion Uganda shillings in 2023 — a 10.9 per cent increase over 2022. Tourism accounted for 2.6 per cent of Uganda&apos;s total tax revenue and 17.2 per cent of national gross capital formation. Source: Uganda Tourism Satellite Account Report, March 2025.
+                This guide lists {lodges.length} lodges across {regionCounts.length} regions — from gorilla trekking lodges in Bwindi and <Link href="/regions/mgahinga" className="text-gold hover:underline">Mgahinga</Link> to wildlife safari camps in Queen Elizabeth, Murchison Falls and <Link href="/regions/kidepo" className="text-gold hover:underline">Kidepo Valley</Link>. Every property is independently researched with no paid placements. In 2025, 117 accommodation facilities had been graded and classified by the Uganda Tourism Board.
               </p>
             </div>
           </div>
@@ -452,82 +478,58 @@ export default async function HomePage() {
             mainEntity: [
               {
                 "@type": "Question",
-                name: "How many lodges are there in Uganda?",
+                name: "What is the best lodge in Uganda for gorilla trekking?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "This guide lists over 215 Uganda lodges across 16 regions — from gorilla trekking lodges in Bwindi and Mgahinga to wildlife safari camps in Queen Elizabeth, Murchison Falls and Kidepo Valley. Uganda's accommodation ranges from ultra-luxury tented camps (from $500 per night) to community-run guesthouses (from $20 per night). In the FY 2023/24, 35 accommodation facilities were officially rated and classified by the Uganda Tourism Board.",
+                  text: "The best lodge depends on which gorilla sector you trek from. For Buhoma (northern Bwindi), Buhoma Lodge offers eight eco-cottages inside the park. For Nkuringo (southern Bwindi), Clouds Mountain Gorilla Lodge at over 2,000 metres is Uganda's highest-altitude luxury property. For Rushaga and Ruhija, Ruhija Gorilla Safari Lodge provides direct access to tracking departure points.",
                 },
               },
               {
                 "@type": "Question",
-                name: "How many tourists visit Uganda each year?",
+                name: "How much does a lodge in Uganda cost?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "In 2023, 1,274,210 international visitors travelled to Uganda — a 56.4 per cent increase over 812,508 arrivals in 2022. Of these, 270,160 arrived by air, representing 37.8 per cent growth. Source: Uganda Tourism Satellite Account Report, March 2025.",
+                  text: "Uganda lodge prices range from approximately USD 50–80 per night for mid-range community lodges to USD 400–800+ per night at ultra-luxury tented camps. Prices typically include full board (three meals). Budget options such as Bwindi Backpackers Lodge start below USD 50.",
                 },
               },
               {
                 "@type": "Question",
-                name: "How long do tourists typically stay in Uganda?",
+                name: "When should I book a lodge in Uganda?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "International visitors stayed an average of 7.6 nights in 2023. Given the distances between major national parks, a trip of at least ten to fourteen days is recommended to combine multiple regions.",
+                  text: "For gorilla trekking lodges, book 3–6 months in advance, particularly for peak season (June–August and December–February). Gorilla permits sell out earlier than lodges. For safari lodges in Queen Elizabeth or Murchison Falls, 2–3 months is generally sufficient outside peak season.",
                 },
               },
               {
                 "@type": "Question",
-                name: "What are the main reasons to visit Uganda?",
+                name: "Do Uganda lodges include meals?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Gorilla trekking in Bwindi Impenetrable National Park is the primary draw. Other highlights include chimpanzee tracking in Kibale National Park, wildlife safaris in Queen Elizabeth and Murchison Falls, and cultural experiences. Bwindi is home to roughly half of the world's remaining mountain gorillas.",
+                  text: "Most safari lodges and gorilla lodges in Uganda operate on a full-board or half-board basis. Community lodges and budget guesthouses typically offer breakfast and dinner; meals on request are common at simpler properties.",
                 },
               },
               {
                 "@type": "Question",
-                name: "What accommodation is available in Kampala?",
+                name: "Which region has the most lodges in Uganda?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Lodges of Uganda lists accommodation in Kampala, Uganda's capital. Options range from international hotels to budget guesthouses. Kampala frequently serves as a starting point for tours to the western national parks or as a final stop before flying out of Entebbe International Airport.",
+                  text: "Bwindi Impenetrable National Park has the highest concentration of lodges, driven by mountain gorilla trekking demand. Queen Elizabeth National Park and the Fort Portal/Crater Lakes region follow.",
                 },
               },
               {
                 "@type": "Question",
-                name: "Are there eco lodges in Uganda?",
+                name: "What is the difference between a lodge and a tented camp in Uganda?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Uganda has several eco-tourism properties, including the Timu Eco Camp in Kaabong, which practises sustainable tourism in the Karamoja region. Lodges of Uganda includes a dedicated category for eco lodges.",
+                  text: "A lodge in Uganda is typically a permanent structure with en-suite rooms, restaurant, and communal areas. A luxury tented camp offers large canvas tents on raised platforms with the same amenities — private bathroom, electricity, full-board meals — but a closer-to-nature experience. Both range from mid-range to ultra-luxury.",
                 },
               },
               {
                 "@type": "Question",
-                name: "What lodges are near Kidepo Valley National Park?",
+                name: "How many lodges are listed on this guide?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Lodges of Uganda lists accommodation in the Kidepo Valley National Park region. Kidepo is one of Uganda's most remote and species-rich parks, offering an untouched wilderness experience. Access is by domestic flight or a 10–12 hour drive from Kampala.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "Where can you track chimpanzees in Uganda?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "Kibale National Park is known as the primate capital of the world and is home to 13 primate species, including habituated chimpanzees. Lodges of Uganda lists accommodation in the Kibale region and nearby Fort Portal.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "How many national parks does Uganda have?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "Uganda has ten national parks, all managed by the Uganda Wildlife Authority (UWA), established in 1996. They range from Bwindi Impenetrable (gorilla trekking) and Queen Elizabeth (tree-climbing lions, Kazinga Channel) to the Rwenzori Mountains — a UNESCO World Heritage Site reaching 5,109 metres — and Kidepo Valley in the remote northeast. UWA also oversees more than 30 tourism concessions across forest reserves and wildlife reserves.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "What economic contribution does tourism make in Uganda?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "Tourism-related industries generated a gross value added of 7,311 billion Uganda shillings in 2023 — a 10.9 per cent increase over 2022. Tourism accounted for 2.6 per cent of Uganda's total tax revenue and 17.2 per cent of national gross capital formation. Source: Uganda Tourism Satellite Account Report, March 2025.",
+                  text: "This guide lists over 215 lodges across 17 regions — from gorilla trekking lodges in Bwindi and Mgahinga to wildlife safari camps in Queen Elizabeth, Murchison Falls and Kidepo Valley. Every property is independently researched with no paid placements. In 2025, 117 accommodation facilities had been graded and classified by the Uganda Tourism Board.",
                 },
               },
             ],
