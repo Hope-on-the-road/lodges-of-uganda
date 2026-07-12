@@ -28,6 +28,9 @@ const BLOG_ARTICLES: Article[] = [
   { slug: "hotel-occupancy-uganda", title: "Uganda Hotel Occupancy Rates (2023 Data)" },
   { slug: "eco-tourism-uganda", title: "Eco Tourism in Uganda: How to Travel Responsibly" },
   { slug: "best-lodges-murchison-falls", title: "Best Lodges in Murchison Falls National Park (2026 Guide)" },
+  { slug: "adventure-consults", title: "Adventure Consults — Uganda's Mountaineering & Safari Specialists" },
+  { slug: "mahogany-springs", title: "Mahogany Springs Lodge: Luxury Gorilla Trekking Base in Bwindi" },
+  { slug: "rwakobo-rock", title: "Rwakobo Rock — Eco Lodge near Lake Mburo National Park" },
 ];
 
 const RELATED_MAP: Record<string, string[]> = {
@@ -53,6 +56,9 @@ const RELATED_MAP: Record<string, string[]> = {
   "hotel-occupancy-uganda": ["best-time-book-uganda-lodge", "rainy-season-uganda-safari-guide", "where-to-stay-uganda"],
   "eco-tourism-uganda": ["uganda-safari-cost-guide", "food-uganda-safari-lodges", "trackers-safari-lodge-visit"],
   "best-lodges-murchison-falls": ["boat-safari-kazinga-channel-guide", "uganda-safari-cost-guide", "best-time-book-uganda-lodge"],
+  "adventure-consults": ["uganda-gorilla-trekking-fitness-guide", "bwindi-sectors-compared", "uganda-safari-cost-guide"],
+  "mahogany-springs": ["trackers-safari-lodge-visit", "bwindi-sectors-compared", "best-time-book-uganda-lodge"],
+  "rwakobo-rock": ["birding-in-uganda-top-spots", "overnight-safari-vs-day-trip-uganda", "eco-tourism-uganda"],
 };
 
 export function RelatedArticles({ currentSlug }: { currentSlug: string }) {

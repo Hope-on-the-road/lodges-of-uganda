@@ -593,9 +593,9 @@ export const regions: Region[] = [
         answer: "The drive from Kampala to Bwindi takes 8-10 hours via Mbarara and Kabale. Alternatively, fly from Entebbe to Kisoro or Kihihi airstrip (about 1.5 hours) with Aerolink Uganda. Most travellers break the drive with a night at Lake Bunyonyi.",
       },
     ],
-    seoTitle: "Lodges in Kampala — Hotels & Accommodation Guide",
+    seoTitle: "Lodge Kampala — Hotels & Accommodation in Uganda's Capital",
     seoDescription:
-      "Find lodges and hotels in Kampala, Uganda's capital. From city hotels to guesthouses — independent guide with no booking fees.",
+      "Find the right lodge in Kampala. City hotels, boutique guesthouses and budget stays across Kololo, Nakasero and Munyonyo — independent guide, no booking fees.",
     heroImage: "",
   },
   {

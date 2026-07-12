@@ -19,6 +19,27 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: "adventure-consults",
+    title: "Adventure Consults — Uganda's Mountaineering & Safari Specialists",
+    excerpt:
+      "Adventure Consults is Uganda's leading mountaineering company, running Rwenzori expeditions to Margherita Peak (5,109 m) alongside gorilla trekking and wildlife safaris.",
+    date: "2026-07-12",
+  },
+  {
+    slug: "mahogany-springs",
+    title: "Mahogany Springs Lodge: Luxury Gorilla Trekking Base in Bwindi",
+    excerpt:
+      "Mahogany Springs Lodge in Buhoma offers 14 suites overlooking the Munyanga River, just 2 minutes from the gorilla trekking briefing point. $400–$900 per night.",
+    date: "2026-07-12",
+  },
+  {
+    slug: "rwakobo-rock",
+    title: "Rwakobo Rock — Eco Lodge near Lake Mburo National Park",
+    excerpt:
+      "Rwakobo Rock is a family-run eco lodge perched on a granite outcrop near Lake Mburo. Pool, waterhole dining, and no light pollution — 5 minutes from the park gate.",
+    date: "2026-07-12",
+  },
+  {
     slug: "best-lodges-murchison-falls",
     title: "Best Lodges in Murchison Falls National Park (2026 Guide)",
     excerpt:

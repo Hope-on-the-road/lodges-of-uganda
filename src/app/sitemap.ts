@@ -68,6 +68,9 @@ const BLOG_DATES: Record<string, string> = {
   "uganda-safari-cost-guide": "2026-06-05",
   "is-uganda-safe-for-tourists": "2026-06-03",
   "trackers-safari-lodge-visit": "2026-06-01",
+  "adventure-consults": "2026-07-12",
+  "mahogany-springs": "2026-07-12",
+  "rwakobo-rock": "2026-07-12",
 };
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
