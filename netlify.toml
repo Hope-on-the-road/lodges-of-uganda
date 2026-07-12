@@ -267,6 +267,106 @@
   to = "/busia-tourism-infrastructure.html"
   status = 200
 
+[[redirects]]
+  from = "/uganda-hotel-count-statistics"
+  to = "/uganda-hotel-count-statistics.html"
+  status = 200
+
+[[redirects]]
+  from = "/hotel-industry-kira-tourism"
+  to = "/hotel-industry-kira-tourism.html"
+  status = 200
+
+[[redirects]]
+  from = "/tourism-infrastructure-kira"
+  to = "/tourism-infrastructure-kira.html"
+  status = 200
+
+[[redirects]]
+  from = "/kira-hotel-revenue-strategy"
+  to = "/kira-hotel-revenue-strategy.html"
+  status = 200
+
+[[redirects]]
+  from = "/kapelebyong-tourism-potential"
+  to = "/kapelebyong-tourism-potential.html"
+  status = 200
+
+[[redirects]]
+  from = "/kapelebyong-tourism-facilities"
+  to = "/kapelebyong-tourism-facilities.html"
+  status = 200
+
+[[redirects]]
+  from = "/tourism-facilities-private-sector"
+  to = "/tourism-facilities-private-sector.html"
+  status = 200
+
+[[redirects]]
+  from = "/kapelebyong-private-sector-expansion"
+  to = "/kapelebyong-private-sector-expansion.html"
+  status = 200
+
+[[redirects]]
+  from = "/kapelebyong-guest-registration"
+  to = "/kapelebyong-guest-registration.html"
+  status = 200
+
+[[redirects]]
+  from = "/kapelebyong-tourism-satisfaction"
+  to = "/kapelebyong-tourism-satisfaction.html"
+  status = 200
+
+[[redirects]]
+  from = "/hospitality-compliance-uganda"
+  to = "/hospitality-compliance-uganda.html"
+  status = 200
+
+[[redirects]]
+  from = "/kapelebyong-hospitality-inspections"
+  to = "/kapelebyong-hospitality-inspections.html"
+  status = 200
+
+[[redirects]]
+  from = "/kapelebyong-tourism-investment"
+  to = "/kapelebyong-tourism-investment.html"
+  status = 200
+
+[[redirects]]
+  from = "/stopover-kampala-jinja-highway"
+  to = "/stopover-kampala-jinja-highway.html"
+  status = 200
+
+[[redirects]]
+  from = "/kampala-jinja-highway-rest-stops"
+  to = "/kampala-jinja-highway-rest-stops.html"
+  status = 200
+
+[[redirects]]
+  from = "/kyenjojo-hospitality-registration"
+  to = "/kyenjojo-hospitality-registration.html"
+  status = 200
+
+[[redirects]]
+  from = "/kyenjojo-tourism-development-plan"
+  to = "/kyenjojo-tourism-development-plan.html"
+  status = 200
+
+[[redirects]]
+  from = "/kyenjojo-hotel-rooms-growth"
+  to = "/kyenjojo-hotel-rooms-growth.html"
+  status = 200
+
+[[redirects]]
+  from = "/kyenjojo-tourism-quality-standards"
+  to = "/kyenjojo-tourism-quality-standards.html"
+  status = 200
+
+[[redirects]]
+  from = "/lira-city-hospitality-lango"
+  to = "/lira-city-hospitality-lango.html"
+  status = 200
+
 [[headers]]
   for = "/*"
   [headers.values]
