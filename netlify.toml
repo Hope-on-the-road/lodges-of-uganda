@@ -167,6 +167,106 @@
   to = "/luxury-lodges-bwindi.html"
   status = 200
 
+[[redirects]]
+  from = "/uganda-hotels-accommodation-count"
+  to = "/uganda-hotels-accommodation-count.html"
+  status = 200
+
+[[redirects]]
+  from = "/masulita-town-council-wakiso"
+  to = "/masulita-town-council-wakiso.html"
+  status = 200
+
+[[redirects]]
+  from = "/wakiso-town-council-guide"
+  to = "/wakiso-town-council-guide.html"
+  status = 200
+
+[[redirects]]
+  from = "/kasangati-town-council-guide"
+  to = "/kasangati-town-council-guide.html"
+  status = 200
+
+[[redirects]]
+  from = "/factory-hotel-inspections-kampala"
+  to = "/factory-hotel-inspections-kampala.html"
+  status = 200
+
+[[redirects]]
+  from = "/hotel-registration-kampala"
+  to = "/hotel-registration-kampala.html"
+  status = 200
+
+[[redirects]]
+  from = "/tourism-financing-uganda"
+  to = "/tourism-financing-uganda.html"
+  status = 200
+
+[[redirects]]
+  from = "/supplier-training-kampala-tourism"
+  to = "/supplier-training-kampala-tourism.html"
+  status = 200
+
+[[redirects]]
+  from = "/private-tourism-investment-uganda"
+  to = "/private-tourism-investment-uganda.html"
+  status = 200
+
+[[redirects]]
+  from = "/restaurants-accommodation-uganda"
+  to = "/restaurants-accommodation-uganda.html"
+  status = 200
+
+[[redirects]]
+  from = "/accommodation-quality-standards-uganda"
+  to = "/accommodation-quality-standards-uganda.html"
+  status = 200
+
+[[redirects]]
+  from = "/ecotourism-licensing-kampala"
+  to = "/ecotourism-licensing-kampala.html"
+  status = 200
+
+[[redirects]]
+  from = "/electricity-tourism-uganda"
+  to = "/electricity-tourism-uganda.html"
+  status = 200
+
+[[redirects]]
+  from = "/freehold-vs-leasehold-uganda"
+  to = "/freehold-vs-leasehold-uganda.html"
+  status = 200
+
+[[redirects]]
+  from = "/private-schools-amuria"
+  to = "/private-schools-amuria.html"
+  status = 200
+
+[[redirects]]
+  from = "/mice-infrastructure-amuria"
+  to = "/mice-infrastructure-amuria.html"
+  status = 200
+
+[[redirects]]
+  from = "/alebtong-hotels-accommodation"
+  to = "/alebtong-hotels-accommodation.html"
+  status = 200
+
+[[redirects]]
+  from = "/tourism-standards-alebtong"
+  to = "/tourism-standards-alebtong.html"
+  status = 200
+
+[[redirects]]
+  from = "/domestic-tourism-alebtong"
+  to = "/domestic-tourism-alebtong.html"
+  status = 200
+
+[[redirects]]
+  from = "/busia-tourism-infrastructure"
+  to = "/busia-tourism-infrastructure.html"
+  status = 200
+
 [[headers]]
   for = "/*"
   [headers.values]
