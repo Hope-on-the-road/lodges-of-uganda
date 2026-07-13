@@ -85,6 +85,9 @@ const STATIC_PAGES: Record<string, string> = {
   "kyenjojo-hotel-rooms-growth": "2026-07-12",
   "kyenjojo-tourism-quality-standards": "2026-07-12",
   "lira-city-hospitality-lango": "2026-07-12",
+  "hippo-population-uganda": "2026-07-13",
+  "zebras-uganda-where-to-see": "2026-07-13",
+  "property-revaluation-kampala-lodges": "2026-07-13",
 };
 
 const BLOG_DATES: Record<string, string> = {

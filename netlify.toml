@@ -367,6 +367,21 @@
   to = "/lira-city-hospitality-lango.html"
   status = 200
 
+[[redirects]]
+  from = "/hippo-population-uganda"
+  to = "/hippo-population-uganda.html"
+  status = 200
+
+[[redirects]]
+  from = "/zebras-uganda-where-to-see"
+  to = "/zebras-uganda-where-to-see.html"
+  status = 200
+
+[[redirects]]
+  from = "/property-revaluation-kampala-lodges"
+  to = "/property-revaluation-kampala-lodges.html"
+  status = 200
+
 [[headers]]
   for = "/*"
   [headers.values]
