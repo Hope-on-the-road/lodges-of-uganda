@@ -382,6 +382,101 @@
   to = "/property-revaluation-kampala-lodges.html"
   status = 200
 
+[[redirects]]
+  from = "/kyengera-town-council-wakiso"
+  to = "/kyengera-town-council-wakiso.html"
+  status = 200
+
+[[redirects]]
+  from = "/kasanje-town-council-wakiso"
+  to = "/kasanje-town-council-wakiso.html"
+  status = 200
+
+[[redirects]]
+  from = "/kamuli-accommodation-standards"
+  to = "/kamuli-accommodation-standards.html"
+  status = 200
+
+[[redirects]]
+  from = "/kamuli-tourism-facilities"
+  to = "/kamuli-tourism-facilities.html"
+  status = 200
+
+[[redirects]]
+  from = "/private-sector-hotels-fortportal"
+  to = "/private-sector-hotels-fortportal.html"
+  status = 200
+
+[[redirects]]
+  from = "/kamuli-night-accommodation"
+  to = "/kamuli-night-accommodation.html"
+  status = 200
+
+[[redirects]]
+  from = "/fort-portal-tourism-infrastructure"
+  to = "/fort-portal-tourism-infrastructure.html"
+  status = 200
+
+[[redirects]]
+  from = "/karamaga-leisure-park-uganda"
+  to = "/karamaga-leisure-park-uganda.html"
+  status = 200
+
+[[redirects]]
+  from = "/hospitality-infrastructure-quality-uganda"
+  to = "/hospitality-infrastructure-quality-uganda.html"
+  status = 200
+
+[[redirects]]
+  from = "/buhoiga-katumba-leisure-parks"
+  to = "/buhoiga-katumba-leisure-parks.html"
+  status = 200
+
+[[redirects]]
+  from = "/digital-connectivity-tourism-uganda"
+  to = "/digital-connectivity-tourism-uganda.html"
+  status = 200
+
+[[redirects]]
+  from = "/nyakimya-leisure-park-uganda"
+  to = "/nyakimya-leisure-park-uganda.html"
+  status = 200
+
+[[redirects]]
+  from = "/conference-infrastructure-fortportal"
+  to = "/conference-infrastructure-fortportal.html"
+  status = 200
+
+[[redirects]]
+  from = "/tourism-spending-fortportal"
+  to = "/tourism-spending-fortportal.html"
+  status = 200
+
+[[redirects]]
+  from = "/hotel-occupancy-fortportal"
+  to = "/hotel-occupancy-fortportal.html"
+  status = 200
+
+[[redirects]]
+  from = "/craft-branding-uganda"
+  to = "/craft-branding-uganda.html"
+  status = 200
+
+[[redirects]]
+  from = "/tour-operator-craft-partnerships"
+  to = "/tour-operator-craft-partnerships.html"
+  status = 200
+
+[[redirects]]
+  from = "/craft-export-markets-uganda"
+  to = "/craft-export-markets-uganda.html"
+  status = 200
+
+[[redirects]]
+  from = "/kira-tourism-compliance-standards"
+  to = "/kira-tourism-compliance-standards.html"
+  status = 200
+
 [[headers]]
   for = "/*"
   [headers.values]
