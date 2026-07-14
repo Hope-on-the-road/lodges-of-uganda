@@ -122,6 +122,7 @@ const STATIC_PAGES: Record<string, string> = {
   "kajjansi-town-council-wakiso": "2026-07-14",
   "accommodation-classification-uganda": "2026-07-14",
   "tourism-accommodation-establishments": "2026-07-14",
+  "terraces-nakapiripirit-agrotourism": "2026-07-14",
 };
 
 const BLOG_DATES: Record<string, string> = {

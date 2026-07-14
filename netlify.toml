@@ -552,6 +552,11 @@
   to = "/tourism-accommodation-establishments.html"
   status = 200
 
+[[redirects]]
+  from = "/terraces-nakapiripirit-agrotourism"
+  to = "/terraces-nakapiripirit-agrotourism.html"
+  status = 200
+
 [[headers]]
   for = "/*"
   [headers.values]
