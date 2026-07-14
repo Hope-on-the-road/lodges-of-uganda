@@ -477,6 +477,81 @@
   to = "/kira-tourism-compliance-standards.html"
   status = 200
 
+[[redirects]]
+  from = "/self-drive-camping-karamoja"
+  to = "/self-drive-camping-karamoja.html"
+  status = 200
+
+[[redirects]]
+  from = "/timu-eco-camp-kaabong"
+  to = "/timu-eco-camp-kaabong.html"
+  status = 200
+
+[[redirects]]
+  from = "/transport-connectivity-karamoja"
+  to = "/transport-connectivity-karamoja.html"
+  status = 200
+
+[[redirects]]
+  from = "/mukono-district-development"
+  to = "/mukono-district-development.html"
+  status = 200
+
+[[redirects]]
+  from = "/kavumba-recreation-centre-wakiso"
+  to = "/kavumba-recreation-centre-wakiso.html"
+  status = 200
+
+[[redirects]]
+  from = "/chaking-ecotourism-centre"
+  to = "/chaking-ecotourism-centre.html"
+  status = 200
+
+[[redirects]]
+  from = "/mpatti-peninsula-divine-beach"
+  to = "/mpatti-peninsula-divine-beach.html"
+  status = 200
+
+[[redirects]]
+  from = "/ngamba-island-chimpanzee-tourism"
+  to = "/ngamba-island-chimpanzee-tourism.html"
+  status = 200
+
+[[redirects]]
+  from = "/energy-efficiency-buildings-uganda"
+  to = "/energy-efficiency-buildings-uganda.html"
+  status = 200
+
+[[redirects]]
+  from = "/transport-hub-amenities-uganda"
+  to = "/transport-hub-amenities-uganda.html"
+  status = 200
+
+[[redirects]]
+  from = "/nakivubo-wetland-park-facilities"
+  to = "/nakivubo-wetland-park-facilities.html"
+  status = 200
+
+[[redirects]]
+  from = "/katabi-town-council-entebbe"
+  to = "/katabi-town-council-entebbe.html"
+  status = 200
+
+[[redirects]]
+  from = "/kajjansi-town-council-wakiso"
+  to = "/kajjansi-town-council-wakiso.html"
+  status = 200
+
+[[redirects]]
+  from = "/accommodation-classification-uganda"
+  to = "/accommodation-classification-uganda.html"
+  status = 200
+
+[[redirects]]
+  from = "/tourism-accommodation-establishments"
+  to = "/tourism-accommodation-establishments.html"
+  status = 200
+
 [[headers]]
   for = "/*"
   [headers.values]

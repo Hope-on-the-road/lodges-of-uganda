@@ -107,6 +107,21 @@ const STATIC_PAGES: Record<string, string> = {
   "tour-operator-craft-partnerships": "2026-07-13",
   "craft-export-markets-uganda": "2026-07-13",
   "kira-tourism-compliance-standards": "2026-07-13",
+  "self-drive-camping-karamoja": "2026-07-14",
+  "timu-eco-camp-kaabong": "2026-07-14",
+  "transport-connectivity-karamoja": "2026-07-14",
+  "mukono-district-development": "2026-07-14",
+  "kavumba-recreation-centre-wakiso": "2026-07-14",
+  "chaking-ecotourism-centre": "2026-07-14",
+  "mpatti-peninsula-divine-beach": "2026-07-14",
+  "ngamba-island-chimpanzee-tourism": "2026-07-14",
+  "energy-efficiency-buildings-uganda": "2026-07-14",
+  "transport-hub-amenities-uganda": "2026-07-14",
+  "nakivubo-wetland-park-facilities": "2026-07-14",
+  "katabi-town-council-entebbe": "2026-07-14",
+  "kajjansi-town-council-wakiso": "2026-07-14",
+  "accommodation-classification-uganda": "2026-07-14",
+  "tourism-accommodation-establishments": "2026-07-14",
 };
 
 const BLOG_DATES: Record<string, string> = {
