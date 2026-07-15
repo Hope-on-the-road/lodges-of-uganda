@@ -557,6 +557,11 @@
   to = "/terraces-nakapiripirit-agrotourism.html"
   status = 200
 
+[[redirects]]
+  from = "/backpacker-karamoja-budget-travel"
+  to = "/backpacker-karamoja-budget-travel.html"
+  status = 200
+
 [[headers]]
   for = "/*"
   [headers.values]
