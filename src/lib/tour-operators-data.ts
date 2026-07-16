@@ -227,36 +227,47 @@ function generateLongDescription(db: DbOperator): string {
 // --- SEO ---
 
 function generateSeoTitle(db: DbOperator): string {
-  const loc = db.location || db.country || "Uganda";
   const specs = db.specialties ?? [];
   if (hasSpec(specs, GORILLA_RE)) {
-    return `${db.name} — Gorilla Trekking & Safaris in ${loc}`;
+    return `${db.name} Uganda | Gorilla Trekking & Wildlife`;
   }
   if (hasSpec(specs, WILDLIFE_RE)) {
-    return `${db.name} — Wildlife Safaris in ${loc}`;
+    return `${db.name} Uganda | Wildlife Safaris & Tours`;
   }
-  return `${db.name} — Tour Operator in ${loc}`;
+  if (hasSpec(specs, HIKING_RE)) {
+    return `${db.name} Uganda | Trekking & Safari Tours`;
+  }
+  return `${db.name} Uganda | Safari Tour Operator`;
 }
 
 function generateSeoDescription(db: DbOperator): string {
-  const loc = db.location;
-  const specs = db.specialties?.slice(0, 3) ?? [];
-  const areas = db.areas_served ?? [];
+  const specs = db.specialties ?? [];
+  const parks: string[] = [];
 
-  const parts: string[] = [`${db.name}`];
-  if (loc) parts.push(`based in ${loc}`);
-  if (specs.length > 0) parts.push(`specializing in ${formatList(specs)}`);
-  if (areas.length > 1) parts.push(`operating across ${formatList(areas)}`);
+  if (hasSpec(specs, GORILLA_RE)) parks.push("Bwindi");
+  if (hasSpec(specs, WILDLIFE_RE)) {
+    parks.push("Queen Elizabeth");
+    parks.push("Murchison Falls NP");
+  }
 
-  return `${parts.join(", ")}. Independent profile with trust score, contact details and verified business information.`;
+  const parkStr = parks.length > 0 ? ` in ${formatList(parks)}` : "";
+  const specStr = specs.length > 0 ? formatList(specs.slice(0, 3)) : "safari tours";
+  const permitStr = hasSpec(specs, GORILLA_RE) ? " UWA permits $800." : "";
+
+  return `${db.name} Uganda offers ${specStr}${parkStr}.${permitStr} Plan your safari today.`;
 }
 
 // --- Main mapping ---
+
+function sanitizeName(raw: string): string {
+  return raw.replace(/[`]+/g, "").trim();
+}
 
 function toTourOperator(db: DbOperator): TourOperator {
   const specializations = db.specialties ?? [];
   const regions = db.areas_served ?? [];
   const trustIndicators = buildTrustIndicators(db);
+  db = { ...db, name: sanitizeName(db.name) };
 
   return {
     id: db.id,

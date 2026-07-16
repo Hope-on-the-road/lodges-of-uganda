@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from "react";
 import Link from "next/link";
 import type { TourOperator } from "@/lib/tour-operator-types";
 import type { Lodge } from "@/lib/lodge-types";
@@ -53,30 +52,23 @@ function TrustIndicatorRow({ label, available, link }: { label: string; availabl
 }
 
 function FAQItem({ question, answer }: { question: string; answer: string }) {
-  const [open, setOpen] = useState(false);
   return (
-    <div className="bg-white rounded-xl overflow-hidden">
-      <button
-        onClick={() => setOpen(!open)}
-        className="w-full flex items-center justify-between px-5 py-4 text-left"
-        aria-expanded={open}
-      >
+    <details className="bg-white rounded-xl overflow-hidden group">
+      <summary className="flex items-center justify-between px-5 py-4 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
         <span className="font-semibold text-forest text-sm sm:text-base pr-4">{question}</span>
         <svg
-          className={`w-5 h-5 shrink-0 text-gold transition-transform ${open ? "rotate-180" : ""}`}
+          className="w-5 h-5 shrink-0 text-gold transition-transform group-open:rotate-180"
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
         >
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
         </svg>
-      </button>
-      {open && (
-        <div className="px-5 pb-4">
-          <p className="text-sm text-olive-dark/80 leading-relaxed">{answer}</p>
-        </div>
-      )}
-    </div>
+      </summary>
+      <div className="px-5 pb-4">
+        <p className="text-sm text-olive-dark/80 leading-relaxed">{answer}</p>
+      </div>
+    </details>
   );
 }
 
