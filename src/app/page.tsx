@@ -187,7 +187,7 @@ export default async function HomePage() {
             <p>
               But Uganda has far more than gorillas. The country protects ten national parks, managed by the Uganda Wildlife Authority (UWA) since 1996, along with over 30 tourism concessions across forest reserves and wildlife reserves. The landscape shifts dramatically as you move across the country — from the open savanna plains of{" "}
               <Link href="/regions/queen-elizabeth" className="text-gold hover:underline">Queen Elizabeth National Park</Link>, where tree-climbing lions and hippos share the shoreline, to the thundering cascade of{" "}
-              <Link href="/regions/murchison-falls" className="text-gold hover:underline">Murchison Falls</Link>, where the entire Nile forces itself through a seven-meter gap in the rock. The <Link href="/regions/rwenzori" className="text-gold hover:underline">Rwenzori Mountains</Link>, a UNESCO World Heritage Site, rise to 5,109 metres on the western border, while in the remote northeast,{" "}
+              <Link href="/regions/murchison-falls" className="text-gold hover:underline">Murchison Falls</Link>, where the entire Nile forces itself through a seven-meter gap in the rock. The Rwenzori Mountains, a UNESCO World Heritage Site, rise to 5,109 metres on the western border, while in the remote northeast,{" "}
               <Link href="/regions/kidepo" className="text-gold hover:underline">Kidepo Valley</Link> — home to 77 mammal species and 475 recorded bird species — offers some of East Africa&apos;s most untouched wilderness.
             </p>
             <p>
@@ -333,6 +333,34 @@ export default async function HomePage() {
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* In-Depth Guides */}
+      <section className="py-16 bg-cream border-t border-sand/40">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="font-[family-name:var(--font-heading)] font-bold text-forest text-2xl sm:text-3xl mb-2 text-center">
+            In-Depth Guides
+          </h2>
+          <p className="text-olive-dark/50 text-sm text-center mb-8 max-w-xl mx-auto">
+            Research-backed guides to accommodation and destinations across Uganda.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link
+              href="/accommodation-guides"
+              className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md border border-sand/40 hover:border-gold/40 transition-all"
+            >
+              <p className="font-[family-name:var(--font-heading)] font-semibold text-forest group-hover:text-gold transition-colors text-lg mb-2">Accommodation Guides</p>
+              <p className="text-olive-dark/70 text-sm leading-relaxed">Industry data, regional comparisons, and classification standards for Uganda&apos;s lodges and hotels.</p>
+            </Link>
+            <Link
+              href="/bwindi"
+              className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md border border-sand/40 hover:border-gold/40 transition-all"
+            >
+              <p className="font-[family-name:var(--font-heading)] font-semibold text-forest group-hover:text-gold transition-colors text-lg mb-2">Bwindi Impenetrable</p>
+              <p className="text-olive-dark/70 text-sm leading-relaxed">Sector guides, gorilla lodges, trekking preparation, and everything you need for Bwindi.</p>
             </Link>
           </div>
         </div>

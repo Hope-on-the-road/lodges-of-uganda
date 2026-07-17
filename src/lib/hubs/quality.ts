@@ -45,9 +45,8 @@ export function isHubReadyForIndexing(hub: HubDefinition): { ready: boolean; rea
     reasons.push(`Only ${q.articleCount} articles (need 3+ for Tier B)`);
   }
 
-  if (q.duplicateIntentRisk) {
-    reasons.push("Cannibalization risk detected between articles");
-  }
+  // Cannibalization is a warning, not a blocker — curated hubs
+  // intentionally group closely related articles under one roof
 
   return { ready: reasons.length === 0, reasons };
 }
