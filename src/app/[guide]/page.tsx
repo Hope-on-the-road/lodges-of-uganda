@@ -9,10 +9,17 @@ import {
 } from "@/lib/programmatic-pages";
 import { getLodges } from "@/lib/lodges-data";
 import { BestOfPage } from "@/components/BestOfPage";
+import { HubPage } from "@/components/HubPage";
 import { SITE_NAME, SITE_URL } from "@/lib/constants";
+import { hubsMap, hubSlugs, allHubs, indexableHubSlugs } from "@/data/hubs";
+import { articlesByCategory, articlesByEntity, articlesMap } from "@/data/taxonomy/articles";
+import { getRelatedEntities } from "@/lib/hubs/engine";
 
 export function generateStaticParams() {
-  return allProgrammaticSlugs.map((slug) => ({ guide: slug }));
+  return [
+    ...allProgrammaticSlugs.map((slug) => ({ guide: slug })),
+    ...hubSlugs.map((slug) => ({ guide: slug })),
+  ];
 }
 
 export async function generateMetadata({
@@ -21,6 +28,24 @@ export async function generateMetadata({
   params: Promise<{ guide: string }>;
 }): Promise<Metadata> {
   const { guide } = await params;
+
+  // Hub pages
+  const hub = hubsMap[guide];
+  if (hub) {
+    const shouldIndex = indexableHubSlugs.has(guide);
+    return {
+      title: hub.seoTitle,
+      description: hub.seoDescription,
+      alternates: { canonical: `${SITE_URL}/${guide}` },
+      ...(shouldIndex ? {} : { robots: { index: false, follow: true } }),
+      openGraph: {
+        title: `${hub.seoTitle} | ${SITE_NAME}`,
+        description: hub.seoDescription,
+        url: `${SITE_URL}/${guide}`,
+        type: "website",
+      },
+    };
+  }
 
   const near = nearPagesMap[guide];
   if (near) {
@@ -61,9 +86,95 @@ export default async function Page({
   params: Promise<{ guide: string }>;
 }) {
   const { guide } = await params;
+
+  // ── Hub pages ──
+  const hub = hubsMap[guide];
+  if (hub) {
+    const lodges = await getLodges();
+
+    const hubArticles =
+      hub.type === "category" && hub.categoryId
+        ? articlesByCategory(hub.categoryId)
+        : hub.entityRef
+          ? articlesByEntity(hub.entityRef.id)
+          : [];
+
+    const featuredArticles = hub.featuredArticleSlugs
+      .map((slug) => articlesMap[slug])
+      .filter(Boolean);
+
+    const hubLodges = hub.entityRef
+      ? lodges.filter((l) => l.region === hub.entityRef!.id)
+      : [];
+
+    const relatedEntityData = getRelatedEntities(
+      hubArticles,
+      new Set(hub.entityRef ? [hub.entityRef.id] : []),
+      10,
+    );
+
+    const relatedEntities = relatedEntityData
+      .filter((e) => hubsMap[e.entity.id])
+      .map((e) => ({
+        id: e.entity.id,
+        label: e.entity.label,
+        slug: hubsMap[e.entity.id]?.slug || e.entity.id,
+        count: e.count,
+      }));
+
+    const relatedHubs = allHubs
+      .filter((h) => h.slug !== hub.slug)
+      .map((h) => ({ slug: h.slug, title: h.title, type: h.type }));
+
+    const jsonLd = [
+      {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        name: hub.title,
+        description: hub.seoDescription,
+        url: `${SITE_URL}/${guide}`,
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
+          { "@type": "ListItem", position: 2, name: hub.title, item: `${SITE_URL}/${guide}` },
+        ],
+      },
+      ...(hub.faqs.length > 0
+        ? [{
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: hub.faqs.map((f) => ({
+              "@type": "Question",
+              name: f.question,
+              acceptedAnswer: { "@type": "Answer", text: f.answer },
+            })),
+          }]
+        : []),
+    ];
+
+    return (
+      <>
+        {jsonLd.map((schema, i) => (
+          <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+        ))}
+        <HubPage
+          hub={hub}
+          articles={hubArticles}
+          featuredArticles={featuredArticles}
+          lodges={hubLodges}
+          relatedEntities={relatedEntities}
+          relatedHubs={relatedHubs}
+        />
+      </>
+    );
+  }
+
+  // ── Existing programmatic pages ──
   const lodges = await getLodges();
 
-  // "Near" pages (gorilla-trekking-lodges-uganda, etc.)
   const near = nearPagesMap[guide];
   if (near) {
     const filtered = lodges.filter(near.filter);
@@ -134,7 +245,6 @@ export default async function Page({
     );
   }
 
-  // Subregion pages (buhoma-sector-lodges-bwindi, etc.)
   const sub = subregionPagesMap[guide];
   if (sub) {
     const filtered = lodges.filter(

@@ -6,6 +6,7 @@ import { comparisonPages } from "@/lib/comparison-pages";
 import { nearPages, subregionPages } from "@/lib/programmatic-pages";
 import { getComparePairs } from "@/lib/compare-pairs";
 import { getTourOperators } from "@/lib/tour-operators-data";
+import { indexableHubs } from "@/data/hubs";
 
 export const dynamic = "force-static";
 
@@ -225,6 +226,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       lastModified: SITE_LAUNCH,
       changeFrequency: "monthly" as const,
       priority: 0.6,
+    })),
+    ...indexableHubs.map((h) => ({
+      url: `${SITE_URL}/${h.slug}`,
+      lastModified: new Date("2026-07-17"),
+      changeFrequency: "weekly" as const,
+      priority: h.tier === "A" ? 0.9 : 0.7,
     })),
   ];
 }
