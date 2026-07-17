@@ -124,6 +124,8 @@ const STATIC_PAGES: Record<string, string> = {
   "tourism-accommodation-establishments": "2026-07-14",
   "terraces-nakapiripirit-agrotourism": "2026-07-14",
   "backpacker-karamoja-budget-travel": "2026-07-15",
+  "hotel-star-classification-kampala": "2026-07-17",
+  "hotel-registration-tax-kampala": "2026-07-17",
 };
 
 const BLOG_DATES: Record<string, string> = {

@@ -562,6 +562,16 @@
   to = "/backpacker-karamoja-budget-travel.html"
   status = 200
 
+[[redirects]]
+  from = "/hotel-star-classification-kampala"
+  to = "/hotel-star-classification-kampala.html"
+  status = 200
+
+[[redirects]]
+  from = "/hotel-registration-tax-kampala"
+  to = "/hotel-registration-tax-kampala.html"
+  status = 200
+
 [[headers]]
   for = "/*"
   [headers.values]
