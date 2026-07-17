@@ -11,6 +11,11 @@ const nextConfig: NextConfig = {
         hostname: "eqlnmpmfhxdllkuetury.supabase.co",
         pathname: "/storage/v1/object/public/**",
       },
+      {
+        protocol: "https",
+        hostname: "lodgesofuganda.com",
+        pathname: "/images/**",
+      },
     ],
   },
   async redirects() {

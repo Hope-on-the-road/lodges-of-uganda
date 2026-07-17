@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "enrich": "npx tsx scripts/enrich-static-articles.ts",
+    "build": "npx tsx scripts/enrich-static-articles.ts && next build",
     "start": "next start",
     "lint": "eslint"
   },
