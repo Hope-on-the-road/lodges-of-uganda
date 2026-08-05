@@ -4,7 +4,7 @@ import { getLodges } from "@/lib/lodges-data";
 import { regions } from "@/lib/regions-data";
 import { comparisonPages } from "@/lib/comparison-pages";
 import { nearPages, subregionPages } from "@/lib/programmatic-pages";
-import { getComparePairs } from "@/lib/compare-pairs";
+
 import { getTourOperators } from "@/lib/tour-operators-data";
 import { indexableHubs } from "@/data/hubs";
 
@@ -221,12 +221,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: "monthly" as const,
       priority: 0.7,
     })),
-    ...(await getComparePairs()).map((p) => ({
-      url: `${SITE_URL}/compare/${p.slug}`,
-      lastModified: SITE_LAUNCH,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
-    })),
+    // Compare pages are noindex — excluded from sitemap
     ...indexableHubs.map((h) => ({
       url: `${SITE_URL}/${h.slug}`,
       lastModified: new Date("2026-07-17"),
