@@ -1,4 +1,5 @@
 import { supabase } from "./supabase";
+import { normalizeExternalUrl } from "./urls";
 import type {
   Lodge,
   LodgeCategory,
@@ -334,7 +335,7 @@ function toLodge(db: DbLodge): Lodge {
     country: "Uganda",
     category,
     priceLevel,
-    officialWebsite: db.website ?? "",
+    officialWebsite: normalizeExternalUrl(db.website),
     email: db.email ?? "",
     phone: db.phone ?? "",
     whatsapp: "",

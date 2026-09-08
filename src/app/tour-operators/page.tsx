@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { SITE_URL } from "@/lib/constants";
 import { getTourOperators } from "@/lib/tour-operators-data";
 import { TourOperatorsOverview } from "@/components/TourOperatorsOverview";
+import { OperatorDirectoryPagination } from "@/components/OperatorDirectoryPagination";
+import { operatorPageCount } from "@/lib/operator-directory";
 
 export const metadata: Metadata = {
   title: "Tour Operators in Uganda — Independent Directory",
@@ -74,6 +76,16 @@ export default async function TourOperatorsPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       <TourOperatorsOverview operators={tourOperators} />
+
+      {/* Crawlbarer Discovery-Pfad: echte <a href> auf alle Verzeichnis-Seiten.
+          Die interaktive Liste oben bleibt unveraendert. */}
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
+        <OperatorDirectoryPagination
+          currentPage={1}
+          pageCount={operatorPageCount(tourOperators.length)}
+          totalOperators={tourOperators.length}
+        />
+      </div>
     </>
   );
 }

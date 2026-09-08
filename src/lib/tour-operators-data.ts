@@ -1,4 +1,5 @@
 import { supabase } from "./supabase";
+import { normalizeExternalUrl } from "./urls";
 import type { TourOperator, TrustIndicators } from "./tour-operator-types";
 
 interface DbOperator {
@@ -274,7 +275,7 @@ function toTourOperator(db: DbOperator): TourOperator {
     name: db.name,
     slug: db.slug,
     logo: db.logo_url ?? "",
-    website: db.website ?? "",
+    website: normalizeExternalUrl(db.website),
     email: db.email ?? "",
     phone: db.phone ?? "",
     whatsapp: db.whatsapp ?? "",

@@ -143,7 +143,7 @@ export default function SevenDayGorillaPage() {
               Where to stay — Entebbe
             </p>
             <ul className="space-y-1.5">
-              <LodgePick label="Budget" name="Karibu Guesthouse" region="entebbe" slug="karibu-guesthouse-entebbe" />
+              <LodgePick label="Budget" name="Karibu Guesthouse" region="entebbe" slug="karibu-guesthouse" />
               <LodgePick label="Mid-range" name="Protea Hotel Entebbe" region="entebbe" slug="protea-hotel-entebbe" />
               <LodgePick label="Luxury" name="Hotel No.5 Entebbe" region="entebbe" slug="hotel-no5-entebbe" />
             </ul>
@@ -220,7 +220,7 @@ export default function SevenDayGorillaPage() {
             </p>
             <ul className="space-y-1.5">
               <LodgePick label="Budget" name="Honey Bear Bushcamp" region="ishasha" slug="honey-bear-bushcamp" />
-              <LodgePick label="Mid-range" name="Enjojo Lodge" region="ishasha" slug="enjojo-lodge" />
+              <LodgePick label="Mid-range" name="Enjojo Lodge" region="queen-elizabeth" slug="enjojo-lodge" />
               <LodgePick label="Luxury" name="Ishasha Wilderness Camp" region="ishasha" slug="ishasha-wilderness-camp" />
             </ul>
           </div>
@@ -246,7 +246,7 @@ export default function SevenDayGorillaPage() {
               Where to stay — Queen Elizabeth (Mweya / Kasenyi area)
             </p>
             <ul className="space-y-1.5">
-              <LodgePick label="Budget" name="Bush Lodge Queen Elizabeth" region="queen-elizabeth" slug="bush-lodge-queen-elizabeth" />
+              <LodgePick label="Budget" name="Queen Elizabeth Bush Lodge" region="queen-elizabeth" slug="queen-elizabeth-bush-lodge" />
               <LodgePick label="Mid-range" name="Kasenyi Safari Camp" region="queen-elizabeth" slug="kasenyi-safari-camp" />
               <LodgePick label="Luxury" name="Mweya Safari Lodge" region="queen-elizabeth" slug="mweya-safari-lodge" />
             </ul>
@@ -271,8 +271,8 @@ export default function SevenDayGorillaPage() {
               Where to stay — Lake Bunyonyi (Option A)
             </p>
             <ul className="space-y-1.5">
-              <LodgePick label="Budget" name="Lake Bunyonyi Overland Resort" region="lake-bunyonyi" slug="lake-bunyonyi-overland-resort" />
-              <LodgePick label="Mid-range" name="Birdnest Resort Lake Bunyonyi" region="lake-bunyonyi" slug="birdnest-resort-lake-bunyonyi" />
+              <LodgePick label="Budget" name="Lake Bunyonyi Overland Resort" region="bwindi" slug="lake-bunyonyi-overland-resort" />
+              <LodgePick label="Mid-range" name="Birdnest Resort Lake Bunyonyi" region="bwindi" slug="birdnest-resort-lake-bunyonyi" />
               <LodgePick label="Luxury" name="Arcadia Cottages Lake Bunyonyi" region="lake-bunyonyi" slug="arcadia-cottages-lake-bunyonyi" />
             </ul>
           </div>

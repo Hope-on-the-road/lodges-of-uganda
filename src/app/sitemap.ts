@@ -184,7 +184,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.7,
     })),
     { url: `${SITE_URL}/tour-operators`, lastModified: new Date("2026-06-10"), changeFrequency: "weekly", priority: 0.8 },
-    { url: `${SITE_URL}/tour-operators/add`, lastModified: new Date("2026-06-04"), changeFrequency: "monthly", priority: 0.6 },
     ...tourOperators.map((op) => ({
       url: `${SITE_URL}/tour-operators/${op.slug}`,
       lastModified: SITE_LAUNCH,

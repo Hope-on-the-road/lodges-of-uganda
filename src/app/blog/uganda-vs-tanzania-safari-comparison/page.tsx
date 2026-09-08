@@ -109,7 +109,7 @@ export default function UgandaVsTanzaniaSafariPage() {
           <p>
             Uganda&apos;s gorilla permit costs $800 per person. Rwanda&apos;s permit is $1,500. Both offer the same one-hour encounter with a habituated gorilla family, but Uganda&apos;s lower price makes it the more accessible option. Uganda also has more habituated gorilla families across four trekking sectors in Bwindi and one in{" "}
             <Link href="/regions/mgahinga" className="text-gold hover:underline">Mgahinga Gorilla National Park</Link>, giving you more choice and better permit availability. For a detailed comparison, see our guide to{" "}
-            <Link href="/blog/uganda-vs-rwanda-gorilla-trekking" className="text-gold hover:underline">Uganda vs Rwanda gorilla trekking</Link>.
+            <Link href="/uganda-vs-rwanda-gorilla-trekking" className="text-gold hover:underline">Uganda vs Rwanda gorilla trekking</Link>.
           </p>
 
           {/* Cost */}

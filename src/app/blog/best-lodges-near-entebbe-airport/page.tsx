@@ -197,7 +197,7 @@ export default function BestLodgesNearEntebbeAirportPage() {
           </p>
           <p>
             Browse our full selection of{" "}
-            <Link href="/regions/entebbe-kampala" className="text-gold hover:underline">Entebbe and Kampala area lodges</Link>{" "}
+            <Link href="/regions/entebbe" className="text-gold hover:underline">Entebbe area lodges</Link>{" "}
             to compare options by price, location, and style.
           </p>
         </div>
@@ -214,7 +214,7 @@ export default function BestLodgesNearEntebbeAirportPage() {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
-              href="/regions/entebbe-kampala"
+              href="/regions/entebbe"
               className="inline-flex items-center px-6 py-3 bg-gold text-white font-semibold rounded-lg hover:bg-gold-light transition-colors text-sm"
             >
               Explore Entebbe Lodges

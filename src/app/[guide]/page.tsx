@@ -167,6 +167,7 @@ export default async function Page({
           lodges={hubLodges}
           relatedEntities={relatedEntities}
           relatedHubs={relatedHubs}
+          linkableCategorySlugs={hubSlugs}
         />
       </>
     );

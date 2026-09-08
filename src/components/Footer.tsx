@@ -72,6 +72,7 @@ export function Footer() {
               <li><Link href="/mweya-peninsula-lodges-queen-elizabeth" className="text-sm hover:text-cream transition-colors">Mweya Peninsula Lodges</Link></li>
               <li><Link href="/kasenyi-plains-lodges-queen-elizabeth" className="text-sm hover:text-cream transition-colors">Kasenyi Plains Lodges</Link></li>
               <li><Link href="/about" className="text-sm hover:text-cream transition-colors">About</Link></li>
+              <li><Link href="/for-lodges" className="text-sm hover:text-cream transition-colors">For Lodges &amp; Operators</Link></li>
               <li><Link href="/legal-notice" className="text-sm hover:text-cream transition-colors">Legal Notice</Link></li>
               <li><Link href="/privacy-policy" className="text-sm hover:text-cream transition-colors">Privacy Policy</Link></li>
               <li>

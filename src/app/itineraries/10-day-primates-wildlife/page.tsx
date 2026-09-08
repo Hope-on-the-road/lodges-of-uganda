@@ -145,7 +145,7 @@ export default function TenDayPrimatesPage() {
               Where to stay — Entebbe
             </p>
             <ul className="space-y-1.5">
-              <LodgePick label="Budget" name="Karibu Guesthouse" region="entebbe" slug="karibu-guesthouse-entebbe" />
+              <LodgePick label="Budget" name="Karibu Guesthouse" region="entebbe" slug="karibu-guesthouse" />
               <LodgePick label="Mid-range" name="Protea Hotel Entebbe" region="entebbe" slug="protea-hotel-entebbe" />
               <LodgePick label="Luxury" name="Hotel No.5 Entebbe" region="entebbe" slug="hotel-no5-entebbe" />
             </ul>
@@ -171,7 +171,7 @@ export default function TenDayPrimatesPage() {
             <ul className="space-y-1.5">
               <LodgePick label="Budget" name="Kibale Forest Camp" region="kibale" slug="kibale-forest-camp" />
               <LodgePick label="Mid-range" name="Primate Lodge Kibale" region="kibale" slug="primate-lodge-kibale" />
-              <LodgePick label="Luxury" name="Kyaninga Lodge" region="fort-portal" slug="kyaninga-lodge" />
+              <LodgePick label="Luxury" name="Kyaninga Lodge" region="queen-elizabeth" slug="kyaninga-lodge" />
             </ul>
           </div>
         </section>
@@ -197,7 +197,7 @@ export default function TenDayPrimatesPage() {
             <ul className="space-y-1.5">
               <LodgePick label="Budget" name="Kibale Forest Camp" region="kibale" slug="kibale-forest-camp" />
               <LodgePick label="Mid-range" name="Primate Lodge Kibale" region="kibale" slug="primate-lodge-kibale" />
-              <LodgePick label="Luxury" name="Kyaninga Lodge" region="fort-portal" slug="kyaninga-lodge" />
+              <LodgePick label="Luxury" name="Kyaninga Lodge" region="queen-elizabeth" slug="kyaninga-lodge" />
             </ul>
           </div>
         </section>
@@ -220,7 +220,7 @@ export default function TenDayPrimatesPage() {
               Where to stay — Queen Elizabeth (Mweya / Kasenyi area)
             </p>
             <ul className="space-y-1.5">
-              <LodgePick label="Budget" name="Bush Lodge Queen Elizabeth" region="queen-elizabeth" slug="bush-lodge-queen-elizabeth" />
+              <LodgePick label="Budget" name="Queen Elizabeth Bush Lodge" region="queen-elizabeth" slug="queen-elizabeth-bush-lodge" />
               <LodgePick label="Mid-range" name="Kasenyi Safari Camp" region="queen-elizabeth" slug="kasenyi-safari-camp" />
               <LodgePick label="Luxury" name="Katara Lodge" region="queen-elizabeth" slug="katara-lodge" />
             </ul>
@@ -246,7 +246,7 @@ export default function TenDayPrimatesPage() {
               Where to stay — same lodge as Day 4
             </p>
             <ul className="space-y-1.5">
-              <LodgePick label="Budget" name="Bush Lodge Queen Elizabeth" region="queen-elizabeth" slug="bush-lodge-queen-elizabeth" />
+              <LodgePick label="Budget" name="Queen Elizabeth Bush Lodge" region="queen-elizabeth" slug="queen-elizabeth-bush-lodge" />
               <LodgePick label="Mid-range" name="Kasenyi Safari Camp" region="queen-elizabeth" slug="kasenyi-safari-camp" />
               <LodgePick label="Luxury" name="Katara Lodge" region="queen-elizabeth" slug="katara-lodge" />
             </ul>
@@ -330,8 +330,8 @@ export default function TenDayPrimatesPage() {
               Where to stay — Lake Bunyonyi
             </p>
             <ul className="space-y-1.5">
-              <LodgePick label="Budget" name="Lake Bunyonyi Overland Resort" region="lake-bunyonyi" slug="lake-bunyonyi-overland-resort" />
-              <LodgePick label="Mid-range" name="Birdnest Resort Lake Bunyonyi" region="lake-bunyonyi" slug="birdnest-resort-lake-bunyonyi" />
+              <LodgePick label="Budget" name="Lake Bunyonyi Overland Resort" region="bwindi" slug="lake-bunyonyi-overland-resort" />
+              <LodgePick label="Mid-range" name="Birdnest Resort Lake Bunyonyi" region="bwindi" slug="birdnest-resort-lake-bunyonyi" />
               <LodgePick label="Luxury" name="Arcadia Cottages Lake Bunyonyi" region="lake-bunyonyi" slug="arcadia-cottages-lake-bunyonyi" />
             </ul>
           </div>
@@ -354,8 +354,8 @@ export default function TenDayPrimatesPage() {
               Where to stay — same lodge as Day 8
             </p>
             <ul className="space-y-1.5">
-              <LodgePick label="Budget" name="Lake Bunyonyi Overland Resort" region="lake-bunyonyi" slug="lake-bunyonyi-overland-resort" />
-              <LodgePick label="Mid-range" name="Birdnest Resort Lake Bunyonyi" region="lake-bunyonyi" slug="birdnest-resort-lake-bunyonyi" />
+              <LodgePick label="Budget" name="Lake Bunyonyi Overland Resort" region="bwindi" slug="lake-bunyonyi-overland-resort" />
+              <LodgePick label="Mid-range" name="Birdnest Resort Lake Bunyonyi" region="bwindi" slug="birdnest-resort-lake-bunyonyi" />
               <LodgePick label="Luxury" name="Arcadia Cottages Lake Bunyonyi" region="lake-bunyonyi" slug="arcadia-cottages-lake-bunyonyi" />
             </ul>
           </div>

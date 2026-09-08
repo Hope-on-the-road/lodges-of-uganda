@@ -100,6 +100,10 @@ interface HubPageProps {
   lodges: Lodge[];
   relatedEntities: { id: string; label: string; slug: string; count: number }[];
   relatedHubs: { slug: string; title: string; type: string }[];
+  /** Kategorie-Slugs, fuer die tatsaechlich eine Hub-Seite existiert.
+   *  Ohne diesen Filter verlinkte "related-categories" auf /activities,
+   *  /destinations, /travel-planning, /practical-information — alle 404. */
+  linkableCategorySlugs: string[];
 }
 
 export function HubPage({
@@ -109,6 +113,7 @@ export function HubPage({
   lodges,
   relatedEntities,
   relatedHubs,
+  linkableCategorySlugs,
 }: HubPageProps) {
   const [showAllArticles, setShowAllArticles] = useState(false);
   const displayedArticles = showAllArticles ? articles : articles.slice(0, 12);
@@ -150,6 +155,7 @@ export function HubPage({
             lodges={lodges}
             relatedEntities={relatedEntities}
             relatedHubs={relatedHubs}
+            linkableCategorySlugs={linkableCategorySlugs}
             showAllArticles={showAllArticles}
             displayedArticles={displayedArticles}
             onShowAll={() => setShowAllArticles(true)}
@@ -176,6 +182,7 @@ function HubSection({
   lodges,
   relatedEntities,
   relatedHubs,
+  linkableCategorySlugs,
   showAllArticles,
   displayedArticles,
   onShowAll,
@@ -187,6 +194,7 @@ function HubSection({
   lodges: Lodge[];
   relatedEntities: { id: string; label: string; slug: string; count: number }[];
   relatedHubs: { slug: string; title: string; type: string }[];
+  linkableCategorySlugs: string[];
   showAllArticles: boolean;
   displayedArticles: Article[];
   onShowAll: () => void;
@@ -296,12 +304,17 @@ function HubSection({
       );
 
     case "related-categories": {
+      // Eine Kategorie ist nur verlinkbar, wenn unter /<slug> auch eine
+      // Hub-Seite existiert. Sonst entstehen interne 404er.
+      const linkable = new Set(linkableCategorySlugs);
       const selectedSlugs = hub.relatedCategorySlugs;
-      const cats = selectedSlugs
-        ? selectedSlugs.map((s) => categoriesMap[s]).filter(Boolean)
-        : Object.values(categoriesMap)
-            .filter((c) => c.id !== hub.categoryId)
-            .slice(0, 4);
+      const cats = (
+        selectedSlugs
+          ? selectedSlugs.map((s) => categoriesMap[s]).filter(Boolean)
+          : Object.values(categoriesMap).filter((c) => c.id !== hub.categoryId)
+      )
+        .filter((c) => linkable.has(c.slug))
+        .slice(0, 4);
       if (cats.length === 0) return null;
       return (
         <section className="mb-12">

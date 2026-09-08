@@ -137,7 +137,7 @@ export default function RwakoboRockPage() {
 
           <p>
             For full details on rooms, rates, and how to book, see our{" "}
-            <Link href="/lodges/lake-mburo/rwakobo-rock" className="text-gold hover:underline">
+            <Link href="/lodges/queen-elizabeth/rwakobo-rock" className="text-gold hover:underline">
               Rwakobo Rock lodge listing
             </Link>. For more about the Lake Mburo region and other accommodation options nearby, visit our{" "}
             <Link href="/regions/lake-mburo" className="text-gold hover:underline">
@@ -158,7 +158,7 @@ export default function RwakoboRockPage() {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
-              href="/lodges/lake-mburo/rwakobo-rock"
+              href="/lodges/queen-elizabeth/rwakobo-rock"
               className="inline-flex items-center px-6 py-3 bg-gold text-white font-semibold rounded-lg hover:bg-gold-light transition-colors text-sm"
             >
               View Lodge Details

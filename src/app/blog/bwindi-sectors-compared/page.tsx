@@ -117,9 +117,9 @@ export default function BwindiSectorsComparedPage() {
           </p>
           <p>
             <strong>Best lodges:</strong>{" "}
-            <Link href="/lodges/bwindi/gorilla-mist-camp" className="text-gold hover:underline">Gorilla Mist Camp</Link>{" "}
+            <Link href="/lodges/queen-elizabeth/gorilla-mist-camp" className="text-gold hover:underline">Gorilla Mist Camp</Link>{" "}
             is a solid mid-range choice.{" "}
-            <Link href="/lodges/bwindi/ruhija-gorilla-lodge" className="text-gold hover:underline">Ruhija Gorilla Lodge</Link>{" "}
+            <Link href="/lodges/bwindi/ruhija-gorilla-safari-lodge" className="text-gold hover:underline">Ruhija Gorilla Safari Lodge</Link>{" "}
             is another option close to the gate. Lodge choice here is more limited than Buhoma.
           </p>
           <p>
