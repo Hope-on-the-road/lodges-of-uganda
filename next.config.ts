@@ -19,11 +19,15 @@ const nextConfig: NextConfig = {
     ],
   },
   async redirects() {
-    return lodgeRedirects.map((l: { slug: string; region: string }) => ({
-      source: `/${l.slug}`,
-      destination: `/lodges/${l.region}/${l.slug}`,
-      permanent: true,
-    }));
+    // `target` setzen nur Legacy-Slugs, deren Lodge in der Datenbank neu
+    // geslugt wurde — dort laesst sich das Ziel nicht aus dem Slug ableiten.
+    return lodgeRedirects.map(
+      (l: { slug: string; region: string; target?: string }) => ({
+        source: `/${l.slug}`,
+        destination: l.target ?? `/lodges/${l.region}/${l.slug}`,
+        permanent: true,
+      }),
+    );
   },
 };
 
